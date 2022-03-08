@@ -1,0 +1,144 @@
+<view class="header">
+    <image src="../../images/img_slogan.png" style="width: 514rpx; height: 125rpx; display: block; box-sizing: border-box; position: relative; left: 119rpx; top: 134rpx"></image>
+</view>
+<view class="title">
+    <image mode src="../../images/img_title.png"></image>
+</view>
+<view class="question">
+    <image mode src="../../images/img_question.png"></image>
+    <view class="content">
+        <view class="question-title">
+            <image mode src="../../images/img_question_title.png"></image>
+            <view class="text">
+        第{{currentQuestion}}题,共{{numQuestion}}题
+      </view>
+        </view>
+        <view class="question-puz">
+            <view class="question-puz-center">
+                <view>
+          谜题：{{puzzle}}
+        </view>
+                <view style="margin-top: 10rpx;">
+          ( {{ans_scope}} )
+        </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="operation">
+    <view class="operation-mode">
+        <view bindtap="bind_open_tips" class="operation-mode-item" hoverClass="hover">
+            <image mode src="../../images/img_question_bnt.png"></image>
+            <view class="text">
+        提示
+      </view>
+        </view>
+        <view class="operation-mode-item-separate"></view>
+        <view bindtap="bind_nextQuestion" class="operation-mode-item" hoverClass="hover">
+            <image mode src="../../images/img_question_bnt.png"></image>
+            <view class="text">
+        跳过
+      </view>
+        </view>
+    </view>
+</view>
+<view class="resultContainer">
+    <view bindtap="{{item.editable?'bind_changresult':'bind_nochangresult'}}" class="item" data-from="{{item.from}}" data-index="{{idx}}" data-text="{{item.text}}" hoverClass="hover" wx:for="{{ans_items}}" wx:for-index="idx" wx:key="*this">
+        <image mode src="{{item.editable?'../../images/img_result.png':'../../images/img_result_readonly.png'}}"></image>
+        <view class="text"> {{item.text}} </view>
+    </view>
+</view>
+<view class="chooseContainer">
+    <view bindtap="bind_choose" class="item" data-index="{{idx}}" data-text="{{item.text}}" data-to="{{item.to}}" hoverClass="hover" wx:for="{{choose_items}}" wx:for-index="idx" wx:key="*this">
+        <image mode src="../../images/img_choose.png"></image>
+        <view class="text">
+        {{item.text}}
+      </view>
+    </view>
+</view>
+<view bindtap="bind_mascot" class="mascot" hoverClass="hover">
+    <image mode src="../../images/img_mascot.gif"></image>
+</view>
+<view class="mask" hidden="{{!showTips}}">
+    <view class="panel">
+        <image mode src="../../images/img_tips_bg.png"></image>
+        <view class="container">
+            <view class="tips">
+                <view class="tips-center">
+                    <view>
+                        <text class="caption">提示</text> : {{ans_analyze}} </view>
+                    <view hidden="{{numPrompt>0}}"> （ 您的提示机会已用完 ） </view>
+                    <view hidden="{{numPrompt<=0}}"> ( 您还有 <text class="caption">{{numPrompt}}</text>
+                        <text class="caption">次</text> 提示机会)</view>
+                </view>
+            </view>
+            <view class="actions">
+                <view class="actions-mode">
+                    <view bindtap="bind_close_tips" class="actions-mode-item" hoverClass="hover">
+                        <image mode src="../../images/img_mask_bnt1.png"></image>
+                        <view class="text">
+              知道了
+            </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="mask" hidden="{{!showShare}}">
+    <view class="panel">
+        <image mode src="../../images/img_tips_bg.png"></image>
+        <view class="container">
+            <view class="tips">
+                <view class="tips-center">
+                    <view> 您的提示机会已用完了哦。 </view>
+                </view>
+            </view>
+            <view class="actions">
+                <view class="actions-mode">
+                    <view bindtap="bind_close_share" class="actions-mode-item" hoverClass="hover">
+                        <image mode src="../../images/img_mask_bnt1.png"></image>
+                        <view class="text">
+              再想想
+            </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="mask" hidden="{{!showSummary}}">
+    <view class="panel">
+        <image mode src="{{sumBg}}"></image>
+        <view class="container">
+            <view class="content">
+                <view>
+                    <text class="caption">玩法</text> {{mode==1?'王者模式':'青铜模式'}} </view>
+                <view>
+                    <text class="caption">成绩</text> {{sumDescribe}}</view>
+                <view>
+                    <text class="caption">正确</text> {{sumRigntNum}} 题 <text class="nbsp"></text>
+                    <text class="caption">跳过</text> {{sumSkipNum}} 题 </view>
+                <view>
+                    <text class="caption">耗时</text> {{sumTime}} </view>
+            </view>
+            <view class="actions">
+                <view class="actions-mode">
+                    <view bindtap="bind_onemoregame" class="actions-mode-item" hoverClass="hover">
+                        <image mode src="../../images/img_mask_bnt1.png"></image>
+                        <view class="text">
+              再来一局
+            </view>
+                    </view>
+                    <view class="actions-mode-item-separate"></view>
+                    <view class="actions-mode-item" hoverClass="hover">
+                        <image mode src="../../images/img_mask_bnt1.png"></image>
+                        <button class="text share-bnt" data-source="showSummary" openType="share" style="font-size: 32rpx;font-weight: normal; padding: 0;margin: 0;margin-top: -12rpx;">
+              分享灯谜
+            </button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

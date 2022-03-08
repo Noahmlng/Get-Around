@@ -1,0 +1,348 @@
+page {
+    background: #292421;
+}
+
+.header-left {
+    margin-left: 24rpx;
+    width: 271rpx;
+    height: 378rpx;
+}
+
+.header-right {
+    position: absolute;
+    right: 0;
+    top: 10rpx;
+    width: 289rpx;
+    height: 238rpx;
+}
+
+.title {
+    margin: -208rpx auto 0;
+    text-align: center;
+}
+
+.title image {
+    width: 355rpx;
+    height: 72rpx;
+}
+
+.question {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 318rpx;
+    width: 750rpx;
+    height: 374rpx;
+}
+
+.question image {
+    width: 100%;
+    height: 100%;
+}
+
+.question .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 550rpx;
+    height: 100%;
+}
+
+.question-title {
+    position: relative;
+    margin: -42rpx auto 0;
+    width: 289rpx;
+    height: 106rpx;
+}
+
+.question-title .text,.question-title image {
+    width: 100%;
+    height: 100%;
+}
+
+.question-title .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 100rpx;
+    text-align: center;
+    color: #000;
+    font-size: 36rpx;
+}
+
+.question-puz {
+    margin: 15rpx auto 0;
+    width: 480rpx;
+    height: 220rpx;
+    font-size: 36rpx;
+    position: relative;
+}
+
+.question-puz .question-puz-center {
+    position: absolute;
+    top: 38%;
+    transform: translate(0,-38%);
+}
+
+.operation {
+    position: absolute;
+    top: 690rpx;
+    left: 50%;
+    transform: translate(-50%);
+    width: 480rpx;
+    height: 95rpx;
+}
+
+.operation-mode {
+    flex-direction: row;
+}
+
+.operation-mode,.operation-mode-item {
+    display: flex;
+    /* -webkit-flex-direction: row; */
+}
+
+.operation-mode-item {
+    flex-direction: row;
+    flex: 1;
+    width: 177rpx;
+    height: 93rpx;
+    align-items: center;
+    justify-content: center;
+}
+
+.operation-mode-item .text,.operation-mode-item image {
+    position: absolute;
+    width: 177rpx;
+    height: 93rpx;
+}
+
+.operation-mode-item .text {
+    line-height: 93rpx;
+    text-align: center;
+    color: #000;
+    font-size: 36rpx;
+}
+
+.operation-mode-item-separate {
+    width: 126rpx;
+}
+
+.resultContainer {
+    position: absolute;
+    top: 820rpx;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 15rpx;
+    width: 600rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.resultContainer,.resultContainer .item {
+    height: 112rpx;
+    justify-content: center;
+}
+
+.resultContainer .item {
+    width: 112rpx;
+    align-items: center;
+    margin: 0;
+}
+
+.resultContainer .item image {
+    position: absolute;
+    width: 112rpx;
+    height: 112rpx;
+}
+
+.resultContainer .item .text {
+    position: absolute;
+    width: 102rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    color: #000;
+    font-size: 36rpx;
+    font-weight: bold；;
+}
+
+.chooseContainer {
+    position: absolute;
+    top: 910rpx;
+    left: 50%;
+    transform: translate(-50%);
+    padding-left: 15rpx;
+    width: 560rpx;
+    height: 420rpx;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.chooseContainer .item {
+    width: 109rpx;
+    height: 109rpx;
+    align-items: center;
+    justify-content: center;
+    margin: auto 15rpx;
+}
+
+.chooseContainer .item image {
+    position: absolute;
+    width: 109rpx;
+    height: 109rpx;
+}
+
+.chooseContainer .item .text {
+    position: absolute;
+    width: 95rpx;
+    height: 95rpx;
+    line-height: 90rpx;
+    text-align: center;
+    color: #000;
+    font-size: 36rpx;
+    font-weight: bold；;
+}
+
+.mascot image {
+    position: absolute;
+    left: 30rpx;
+    top: 800rpx;
+    width: 137rpx;
+    height: 134rpx;
+}
+
+.mask {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    animation: animateShow_2 .5s linear forwards;
+}
+
+.mask .panel {
+    position: absolute;
+    left: 0;
+    top: -30rpx;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 728rpx;
+    height: 785rpx;
+}
+
+.mask .panel image {
+    width: 100%;
+    height: 100%;
+}
+
+.mask .panel .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mask .panel .container .actions {
+    position: absolute;
+    top: 610rpx;
+    left: 50%;
+    transform: translate(-50%);
+    width: 480rpx;
+    height: 100rpx;
+}
+
+.mask .panel .container .actions-mode {
+    display: flex;
+    flex-direction: row;
+}
+
+.mask .panel .container .actions-mode-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 200rpx;
+    height: 99rpx;
+    align-items: center;
+    justify-content: center;
+}
+
+.mask .panel .container .actions-mode-item image {
+    position: absolute;
+    width: 200rpx;
+    height: 99rpx;
+}
+
+.mask .panel .container .actions-mode-item .text {
+    position: absolute;
+    width: 200rpx;
+    height: 99rpx;
+    line-height: 99rpx;
+    text-align: center;
+    color: #000;
+    font-size: 32rpx;
+    margin-top: -12rpx;
+}
+
+.mask .panel .container .content {
+    margin: 310rpx auto 0 200rpx;
+    width: 420rpx;
+    height: 230rpx;
+}
+
+.mask .panel .container .content view {
+    margin: 30rpx auto;
+}
+
+.mask .panel .container .content .caption {
+    font-weight: 700;
+}
+
+.tips {
+    margin: 350rpx auto 0;
+    width: 420rpx;
+    height: 230rpx;
+    position: relative;
+}
+
+.tips .tips-center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.tips .tips-center view {
+    text-align: center;
+    width: 420rpx;
+    margin: 20rpx auto;
+}
+
+.tips .tips-center .caption {
+    font-weight: 700;
+}
+
+.share-bnt {
+    background-color: transparent;
+}
+
+.share-bnt,.share-bnt:after {
+    border: none;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 687rpx;
+    height: 463rpx;
+    left: 50%;
+    margin-left: -343rpx;
+}

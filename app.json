@@ -1,0 +1,15 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/riddle_answer/riddle_answer"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationStyle": "custom",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "认识可爱的他们吧！",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#fff"
+    },
+    "sitemapLocation": "sitemap.json"
+}

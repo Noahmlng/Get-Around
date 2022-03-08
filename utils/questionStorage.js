@@ -1,0 +1,2500 @@
+var s = require("./common.js"), e = require("./consts.js"), a = [ {
+    code: "MY000001",
+    puzzle: "开一半票，打一半货。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "贾",
+    ans_analyze: "“货”和“票”各取一半。",
+    difficulty: "1",
+    choose: "贾未入才载香沈网圭智来套"
+}, {
+    code: "MY000002",
+    puzzle: "上下一体",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "卡",
+    ans_analyze: "上下两字合而为一。",
+    difficulty: "1",
+    choose: "卡拾耐息忘金以妻圭太兄把"
+}, {
+    code: "MY000003",
+    puzzle: "四个晚上",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "罗",
+    ans_analyze: "晚上是“夕”。",
+    difficulty: "1",
+    choose: "罗洛川久念甘味哀及皂上镜"
+}, {
+    code: "MY000004",
+    puzzle: "凤头虎尾",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "几",
+    ans_analyze: "“凤”的上部和“虎”的下部为“几”。",
+    difficulty: "1",
+    choose: "几念来根戏本未一新沉质原"
+}, {
+    code: "MY000005",
+    puzzle: "一钩残月带三星",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "心",
+    ans_analyze: "“心”字中央的卧钩像一弯残月，三点象形三颗星。",
+    difficulty: "1",
+    choose: "心林尼成归都软弹香许两病"
+}, {
+    code: "MY000006",
+    puzzle: "孤老不孤有人助",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "佬",
+    ans_analyze: "“孤老”里不要“孤”，剩下一个“老”字，结合一个“人”字就是“佬”。",
+    difficulty: "1",
+    choose: "佬患新李屈盛婆欲目能死留"
+}, {
+    code: "MY000007",
+    puzzle: "需要一半，留下一半。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "雷",
+    ans_analyze: "“需”要上半部，“留”要下半部。",
+    difficulty: "1",
+    choose: "雷样遵枝树饭也珍汉疏天合"
+}, {
+    code: "MY000008",
+    puzzle: "多子为好，少生为妙。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "女",
+    ans_analyze: "“女”加“子”为“好”，“女”加“少”为“妙”。",
+    difficulty: "1",
+    choose: "女衍镝枝有锅卡乱戏不空鸯"
+}, {
+    code: "MY000009",
+    puzzle: "池上没有水，地上不见土。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "也",
+    ans_analyze: "“也”加“水”为“池”，“也”加“土”为“地”。",
+    difficulty: "1",
+    choose: "也经举减许迎鸟笋峰客饭居"
+}, {
+    code: "MY000010",
+    puzzle: "学子远去，又见归来。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "觉",
+    ans_analyze: "“学”去掉“子”，再加上“见”。",
+    difficulty: "1",
+    choose: "觉洪面大影合伞为衣志忘界"
+}, {
+    code: "MY000011",
+    puzzle: "土上长竹林，土下埋寸金。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "等",
+    ans_analyze: "“土”上加竹字头，下加“寸”。",
+    difficulty: "1",
+    choose: "等为笋春包荣又谈泄更丝粉"
+}, {
+    code: "MY000012",
+    puzzle: "一字中有四张嘴，有头有尾遥相应。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "申",
+    ans_analyze: "四张嘴为“田”，上下延伸为“申”。",
+    difficulty: "1",
+    choose: "申拍镜有耐元胜盛目饰清沈"
+}, {
+    code: "MY000013",
+    puzzle: "远看一头牛，近看没有头。",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "午",
+    ans_analyze: "“午”字形像“牛”，“牛”字不出头即“午”字。",
+    difficulty: "1",
+    choose: "午嫁妙差迅红离霍作成迎牙"
+}, {
+    code: "MY000014",
+    puzzle: "小小金坛子，装着金饺子，吃掉金饺子，吐出白珠子。",
+    ans_scope: "打一水果",
+    ans_prompt: "*子",
+    ans_result: "橘子",
+    ans_analyze: "金坛子形容橘子，金饺子形容橘瓣，白珠子形容橘子籽。",
+    difficulty: "1",
+    choose: "橘子苹果香蕉栗车厘李柿桃"
+}, {
+    code: "MY000015",
+    puzzle: "小时胖乎乎，老来皮肉皱，吃掉它的肉，吐出红骨头。",
+    ans_scope: "打一水果",
+    ans_prompt: "*",
+    ans_result: "枣",
+    ans_analyze: "形容枣子和枣核。",
+    difficulty: "1",
+    choose: "枣苹果香蕉栗子橘长不喜余"
+}, {
+    code: "MY000016",
+    puzzle: "团聚在温泉",
+    ans_scope: "打一传统食物",
+    ans_prompt: "**",
+    ans_result: "汤圆",
+    ans_analyze: "汤，温泉。圆，团圆。",
+    difficulty: "1",
+    choose: "汤圆正娘羽两照贾色信别龙"
+}, {
+    code: "MY000017",
+    puzzle: "八月开花似小米，浓香飘出数十里，更有几株神奇的，开在遥远月宫里。",
+    ans_scope: "打一植物",
+    ans_prompt: "*花",
+    ans_result: "桂花",
+    ans_analyze: "桂花形似小米，香味芬芳，传说月宫中有桂花树。",
+    difficulty: "1",
+    choose: "桂花荷梅名居仙长不喜桃茶"
+}, {
+    code: "MY000018",
+    puzzle: "头顶尖针，身披糙皮。脚踩绝壁，四季常青。",
+    ans_scope: "打一植物",
+    ans_prompt: "*树",
+    ans_result: "松树",
+    ans_analyze: "松树长青，松针形似针。",
+    difficulty: "1",
+    choose: "松树多究欠东识屈波桃梨茶"
+}, {
+    code: "MY000019",
+    puzzle: "头戴节节帽，身穿节节衣。年年二三月，出土赴宴席。",
+    ans_scope: "打一蔬菜",
+    ans_prompt: "竹*",
+    ans_result: "竹笋",
+    ans_analyze: "竹笋节节高。",
+    difficulty: "1",
+    choose: "竹笋味卧净法马年寻开等点"
+}, {
+    code: "MY000020",
+    puzzle: "白胖娃娃泥里藏，头上打把绿绸伞。腰身瘦小心眼多，千丝万缕连一块。",
+    ans_scope: "打一蔬菜",
+    ans_prompt: "*",
+    ans_result: "藕",
+    ans_analyze: "形容莲藕白净且有孔，有藕断丝连一说。",
+    difficulty: "1",
+    choose: "藕宁从表周漫半付吃顺覆缘"
+}, {
+    code: "MY000021",
+    puzzle: "皮厚嘴又尖，藏在山中间。一场春雨后，节节往上蹿。",
+    ans_scope: "打一蔬菜",
+    ans_prompt: "*",
+    ans_result: "笋",
+    ans_analyze: "雨后春笋。",
+    difficulty: "1",
+    choose: "笋赤收包许正纲开载七欲以"
+}, {
+    code: "MY000022",
+    puzzle: "幼儿不怕冰霜，长大露出锋芒。老来粉身碎骨，仍然洁白无双。",
+    ans_scope: "打一粮食",
+    ans_prompt: "小*",
+    ans_result: "小麦",
+    ans_analyze: "指小麦磨面粉。",
+    difficulty: "1",
+    choose: "小麦乌女珍燕经恙畏太才入"
+}, {
+    code: "MY000023",
+    puzzle: "修理台灯、吊灯和壁灯",
+    ans_scope: "打一西点名",
+    ans_prompt: "三*治",
+    ans_result: "三明治",
+    ans_analyze: "别解为是三种照明器具在维修。",
+    difficulty: "1",
+    choose: "三明治赏粉赤老慎调目苏法"
+}, {
+    code: "MY000024",
+    puzzle: "皮肉粗糙手拿针，悬崖绝壁扎下根，一年四季永长青，昂首挺立伴风云。",
+    ans_scope: "打一树名",
+    ans_prompt: "*树",
+    ans_result: "松树",
+    ans_analyze: "松树长青，松针相似针。",
+    difficulty: "1",
+    choose: "松树花洛缘履流间镝衣午纲"
+}, {
+    code: "MY000025",
+    puzzle: "告捷",
+    ans_scope: "打一中国电影导演",
+    ans_prompt: "陈**",
+    ans_result: "陈凯歌",
+    ans_analyze: "凯歌为胜利之歌。",
+    difficulty: "1",
+    choose: "陈凯歌可辛木胜嘉上大明汉"
+}, {
+    code: "MY000026",
+    puzzle: "辽宁奉天当秘书",
+    ans_scope: "打一现代作家",
+    ans_prompt: "沈**",
+    ans_result: "沈从文",
+    ans_analyze: "奉天为辽宁沈阳的旧名，“当秘书”另解为“从文”。",
+    difficulty: "1",
+    choose: "沈从文周立波赵树理郭沫若"
+}, {
+    code: "MY000027",
+    puzzle: "黑孩子",
+    ans_scope: "打一春秋人物",
+    ans_prompt: "*子",
+    ans_result: "墨子",
+    ans_analyze: "“墨”等同于“黑”。",
+    difficulty: "1",
+    choose: "墨子老孔荀孙庄孟韩非乐毅"
+}, {
+    code: "MY000028",
+    puzzle: "妻子强势",
+    ans_scope: "打一春秋人物",
+    ans_prompt: "**",
+    ans_result: "夫差",
+    ans_analyze: "丈夫弱势、地位差。",
+    difficulty: "1",
+    choose: "夫差李斯孙膑武起商鞅荆轲"
+}, {
+    code: "MY000029",
+    puzzle: "冤情由来",
+    ans_scope: "打一战国末年名人",
+    ans_prompt: "*原",
+    ans_result: "屈原",
+    ans_analyze: "“冤情”对应“屈”，“由来”对应“原”。",
+    difficulty: "1",
+    choose: "屈原顾牛小识粉人吃语鄂增"
+}, {
+    code: "MY000030",
+    puzzle: "突然病愈",
+    ans_scope: "打一西汉名将",
+    ans_prompt: "霍**",
+    ans_result: "霍去病",
+    ans_analyze: "“霍”有迅速的意思，伤病痊愈。",
+    difficulty: "1",
+    choose: "霍去病欠尼蛳望本马调昆东"
+}, {
+    code: "MY000031",
+    puzzle: "枪杆子里出政权",
+    ans_scope: "打一唐代女名人",
+    ans_prompt: "武**",
+    ans_result: "武则天",
+    ans_analyze: "“枪杆子”指的是武力，“政权”即天下。",
+    difficulty: "1",
+    choose: "武则天松亚戏遵拾猴死当西"
+}, {
+    code: "MY000032",
+    puzzle: "江面上往来船只寥寥",
+    ans_scope: "打一三字女明星",
+    ans_prompt: "江**",
+    ans_result: "江疏影",
+    ans_analyze: "江面上基本没有影子。",
+    difficulty: "1",
+    choose: "江疏影铠同语晨一燕珊映蓉"
+}, {
+    code: "MY000033",
+    puzzle: "一个礼拜过得快",
+    ans_scope: "打一二字女明星",
+    ans_prompt: "周*",
+    ans_result: "周迅",
+    ans_analyze: "“一个礼拜”对应“周”，“过的快”即“迅速”。",
+    difficulty: "1",
+    choose: "周迅杰涛才余论袭犹失沈科"
+}, {
+    code: "MY000034",
+    puzzle: "众芳竞放",
+    ans_scope: "打一《水浒传》人物",
+    ans_prompt: "花*",
+    ans_result: "花荣",
+    ans_analyze: "“众芳”指“花”，“竞放”指“荣”。",
+    difficulty: "1",
+    choose: "花荣关胜林冲秦明柴进朱仝"
+}, {
+    code: "MY000035",
+    puzzle: "笼中之鸟",
+    ans_scope: "打一《三国演义》人物",
+    ans_prompt: "*羽",
+    ans_result: "关羽",
+    ans_analyze: "羽毛指代鸟，“关”住“羽”毛。",
+    difficulty: "1",
+    choose: "关羽典韦周瑜刘备孙权吕布"
+}, {
+    code: "MY000036",
+    puzzle: "据收礼品",
+    ans_scope: "打一中医名词",
+    ans_prompt: "推*",
+    ans_result: "推拿",
+    ans_analyze: "拒收礼品为拒绝、推掉，不去拿礼品。",
+    difficulty: "1",
+    choose: "推拿香视按摩安藕病七欠竹"
+}, {
+    code: "MY000037",
+    puzzle: "票贩子",
+    ans_scope: "打一中药名",
+    ans_prompt: "牛*",
+    ans_result: "牛黄",
+    ans_analyze: "票贩子被喊做“黄牛”。",
+    difficulty: "1",
+    choose: "牛黄麻黄桂枝紫苏防风白芷"
+}, {
+    code: "MY000038",
+    puzzle: "涂改履历",
+    ans_scope: "打一古书",
+    ans_prompt: "*经",
+    ans_result: "易经",
+    ans_analyze: "“易”别解为“改变”，“经”作“经历”解。",
+    difficulty: "1",
+    choose: "易经诗增绿久枝耳会节拖马"
+}, {
+    code: "MY000039",
+    puzzle: "乌龙院",
+    ans_scope: "打一话剧",
+    ans_prompt: "茶*",
+    ans_result: "茶馆",
+    ans_analyze: "《乌龙》别解为茶叶名，“院”和“馆”对应。",
+    difficulty: "1",
+    choose: "茶馆雷雨日出哈姆雷特升官"
+}, {
+    code: "MY000040",
+    puzzle: "妇女节前夕",
+    ans_scope: "打一中药",
+    ans_prompt: "三*",
+    ans_result: "三七",
+    ans_analyze: "三八妇女节前夕即为“三七”。",
+    difficulty: "1",
+    choose: "三七牛黄麻黄桂枝紫苏防风"
+}, {
+    code: "MY000041",
+    puzzle: "冬季不拉货",
+    ans_scope: "打一少数民族乐器",
+    ans_prompt: "冬**",
+    ans_result: "冬不拉",
+    ans_analyze: "“冬季不拉货”另解为“冬不拉”。",
+    difficulty: "1",
+    choose: "冬不拉葫芦丝马头琴侗笛空"
+}, {
+    code: "MY000042",
+    puzzle: "相亲成功达五成",
+    ans_scope: "打一张爱玲小说",
+    ans_prompt: "半**",
+    ans_result: "半生缘",
+    ans_analyze: "“五成”对应“半生”。",
+    difficulty: "1",
+    choose: "半生缘格朋洪断义更张刷智"
+}, {
+    code: "MY000043",
+    puzzle: "设计软件",
+    ans_scope: "打一三字口语",
+    ans_prompt: "吃**",
+    ans_result: "吃软饭",
+    ans_analyze: "以软件为生活来源。",
+    difficulty: "1",
+    choose: "吃软饭笔鄂粉甘明从焉空怀"
+}, {
+    code: "MY000044",
+    puzzle: "遥望宝岛",
+    ans_scope: "打一体育设施",
+    ans_prompt: "*台",
+    ans_result: "看台",
+    ans_analyze: "遥望对应“看”，宝岛即台湾。",
+    difficulty: "1",
+    choose: "看台行慎科四余可年陈经新"
+}, {
+    code: "MY000045",
+    puzzle: "有点咸，去加水。",
+    ans_scope: "打一数学名词",
+    ans_prompt: "*法",
+    ans_result: "减法",
+    ans_analyze: "“咸”加“水”为“减”，“去”加“水”为法。",
+    difficulty: "1",
+    choose: "减法加乘除平方积分次指数"
+}, {
+    code: "MY000046",
+    puzzle: "《西厢》物色女二号",
+    ans_scope: "打一流行称谓",
+    ans_prompt: "网*",
+    ans_result: "网红",
+    ans_analyze: "网罗红娘扮演者。",
+    difficulty: "1",
+    choose: "网红橙黄绿青蓝紫相祸之面"
+}, {
+    code: "MY000047",
+    puzzle: "鞋子刚买",
+    ans_scope: "打一动词",
+    ans_prompt: "履*",
+    ans_result: "履新",
+    ans_analyze: "履指鞋子。",
+    difficulty: "1",
+    choose: "履新所戏法离阴合燕真正落"
+}, {
+    code: "MY000048",
+    puzzle: "确是兄长",
+    ans_scope: "打一常用称谓",
+    ans_prompt: "*哥",
+    ans_result: "的哥",
+    ans_analyze: "的确是哥哥。",
+    difficulty: "1",
+    choose: "的哥朋泄则金松书鸣妙蚊犹"
+}, {
+    code: "MY000049",
+    puzzle: "问小孩",
+    ans_scope: "打一物理名词",
+    ans_prompt: "*子",
+    ans_result: "质子",
+    ans_analyze: "“质”问孩“子”。",
+    difficulty: "1",
+    choose: "质子中原核大宣腔筷同畏连"
+}, {
+    code: "MY000050",
+    puzzle: "本人函件",
+    ans_scope: "打一常用词",
+    ans_prompt: "*信",
+    ans_result: "自信",
+    ans_analyze: "自己的信件。",
+    difficulty: "1",
+    choose: "自信希鸟相子鸯哀错将妄愚"
+}, {
+    code: "MY000051",
+    puzzle: "日近黄昏",
+    ans_scope: "打一地名",
+    ans_prompt: "*阳",
+    ans_result: "洛阳",
+    ans_analyze: "“落阳”谐音。",
+    difficulty: "1",
+    choose: "洛阳信南安濮信衡莱海枣当"
+}, {
+    code: "MY000052",
+    puzzle: "风平浪静",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "宁波",
+    ans_analyze: "“宁”静的“波”浪。",
+    difficulty: "1",
+    choose: "宁波河南湖北江西北京海口"
+}, {
+    code: "MY000053",
+    puzzle: "不冷不热好地方",
+    ans_scope: "打一地名",
+    ans_prompt: "*州",
+    ans_result: "温州",
+    ans_analyze: "不冷不热为温和。",
+    difficulty: "1",
+    choose: "温州荆贵福广泉郑沧宿苏徐"
+}, {
+    code: "MY000054",
+    puzzle: "一路平安",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "旅顺",
+    ans_analyze: "“旅”行“顺”利。",
+    difficulty: "1",
+    choose: "旅顺南宁柳州桂林梧州北海"
+}, {
+    code: "MY000055",
+    puzzle: "冰河解冻",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "开封",
+    ans_analyze: "打开、解封。",
+    difficulty: "1",
+    choose: "开封漯河安阳新乡周口许昌"
+}, {
+    code: "MY000056",
+    puzzle: "喜上加喜",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "重庆",
+    ans_analyze: "重复的庆贺。",
+    difficulty: "1",
+    choose: "重庆河南湖北江西北京海口"
+}, {
+    code: "MY000057",
+    puzzle: "一统天下",
+    ans_scope: "打一地名",
+    ans_prompt: "大*",
+    ans_result: "大同",
+    ans_analyze: "天下大同。",
+    difficulty: "1",
+    choose: "大同连庆兴名城宁安冶理关"
+}, {
+    code: "MY000058",
+    puzzle: "红色山脉高高耸起",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "赤峰",
+    ans_analyze: "红色同赤色，山脉指山峰。",
+    difficulty: "1",
+    choose: "赤峰乌海包头通辽呼和浩特"
+}, {
+    code: "MY000059",
+    puzzle: "太阳出来亮堂堂",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "日照",
+    ans_analyze: "太阳照射。",
+    difficulty: "1",
+    choose: "日照济南青岛淄博烟台潍坊"
+}, {
+    code: "MY000060",
+    puzzle: "大楼入口",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "厦门",
+    ans_analyze: "“大楼”别解为“大厦”。",
+    difficulty: "1",
+    choose: "厦门福州三明莆田南平宁德"
+}, {
+    code: "MY000061",
+    puzzle: "月半",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "合肥",
+    ans_analyze: "“月半”合在一起指肥胖。",
+    difficulty: "3",
+    choose: "合肥重山未去弟息科摆得漫"
+}, {
+    code: "MY000062",
+    puzzle: "出一半，要一半",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "山西",
+    ans_analyze: "“出”上半部加“要”的上半部。",
+    difficulty: "1",
+    choose: "山西河南湖北福建北京海口"
+}, {
+    code: "MY000063",
+    puzzle: "李连杰太太，掉头一看",
+    ans_scope: "打一国家",
+    ans_prompt: "*利",
+    ans_result: "智利",
+    ans_analyze: "李连杰太太是“利智”，两字换位为“智利”。",
+    difficulty: "1",
+    choose: "智利越南老挝缅甸泰国印度"
+}, {
+    code: "MY000064",
+    puzzle: "掺水便可盖图章",
+    ans_scope: "打一国家",
+    ans_prompt: "印*",
+    ans_result: "印尼",
+    ans_analyze: "“印尼”中“尼”加三点水就为“印泥”。",
+    difficulty: "1",
+    choose: "印尼越南老挝缅甸泰国智利"
+}, {
+    code: "MY000065",
+    puzzle: "脚儿小，腿儿高，戴红帽，穿白袍。",
+    ans_scope: "打一动物",
+    ans_prompt: "丹**",
+    ans_result: "丹顶鹤",
+    ans_analyze: "丹顶鹤头顶红、身白、腿长。",
+    difficulty: "1",
+    choose: "丹顶鹤申冤论六戒王丝免引"
+}, {
+    code: "MY000066",
+    puzzle: "一把刀，顺水漂，有眼睛，没眉毛。",
+    ans_scope: "打一动物",
+    ans_prompt: "*",
+    ans_result: "鱼",
+    ans_analyze: "水中游鱼。",
+    difficulty: "1",
+    choose: "鱼年覆八腔患朋周妻懂弱落"
+}, {
+    code: "MY000067",
+    puzzle: "白天一起玩，夜间一起眠。到老不分散，人间好姻缘。",
+    ans_scope: "打一动物",
+    ans_prompt: "**",
+    ans_result: "鸳鸯",
+    ans_analyze: "鸳鸯成对。",
+    difficulty: "1",
+    choose: "鸳鸯羚羊驯鹿考拉犀牛猞猁"
+}, {
+    code: "MY000068",
+    puzzle: "两眼外突大嘴巴，有个尾巴比身大。青草假山来相伴，绽放朵朵大红花。",
+    ans_scope: "打一动物",
+    ans_prompt: "**",
+    ans_result: "金鱼",
+    ans_analyze: "水中游且眼睛鼓是金鱼。",
+    difficulty: "1",
+    choose: "金鱼羚羊驯鹿考拉犀牛猞猁"
+}, {
+    code: "MY000069",
+    puzzle: "门前冷落车马稀",
+    ans_scope: "打一飞机品牌",
+    ans_prompt: "**",
+    ans_result: "空客",
+    ans_analyze: "“门前冷落”别解为缺少宾客。",
+    difficulty: "1",
+    choose: "空客波音达索商飞大疆雷神"
+}, {
+    code: "MY000070",
+    puzzle: "身子弯弯像月牙，没有嘴巴光长牙。你若问它有啥用？每天就爱头上爬。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "*子",
+    ans_result: "梳子",
+    ans_analyze: "形容梳头的梳子。",
+    difficulty: "1",
+    choose: "梳子牙刷毛巾肥皂杯伞筷壶"
+}, {
+    code: "MY000071",
+    puzzle: "一群胡子兵，当了牙卫士。讲究卫生不含糊，早晚都要去巡逻。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "牙刷",
+    ans_analyze: "早晚刷牙用的牙刷。",
+    difficulty: "1",
+    choose: "牙刷毛巾肥皂杯子茶壶梳伞"
+}, {
+    code: "MY000072",
+    puzzle: "奇奇怪怪一朵花，平时总是不见它。下雨开得千万朵，天晴它又不见了。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "*",
+    ans_result: "伞",
+    ans_analyze: "遮雨用的雨伞。",
+    difficulty: "1",
+    choose: "伞牙刷毛巾肥皂杯子茶壶梳"
+}, {
+    code: "MY000073",
+    puzzle: "兄弟两个一样高，一起干活一起忙。冷热变换都不怕，酸甜苦辣全尝变。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "筷子",
+    ans_analyze: "吃饭用的一双筷子。",
+    difficulty: "1",
+    choose: "筷子牙刷毛巾肥皂杯伞梳壶"
+}, {
+    code: "MY000074",
+    puzzle: "上不怕水，下不怕火。住在厨房，家家都有。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "*",
+    ans_result: "锅",
+    ans_analyze: "炒菜煮饭用的锅。",
+    difficulty: "1",
+    choose: "锅卧衣祸李黄世座冲洛士珠"
+}, {
+    code: "MY000075",
+    puzzle: "上大口，下小口。穿肠过，不截流。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "漏斗",
+    ans_analyze: "上大下小的漏斗。",
+    difficulty: "1",
+    choose: "漏斗筷子牙刷毛巾肥皂变以"
+}, {
+    code: "MY000076",
+    puzzle: "闲时墙边站，忙时水里钻。地面不干净，满地来撒欢。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "拖把",
+    ans_analyze: "保持地面卫生使用的拖把。",
+    difficulty: "1",
+    choose: "拖把漏斗筷子牙刷毛巾肥皂"
+}, {
+    code: "MY000077",
+    puzzle: "盘着一条龙，头顶一簇红。徐徐吐香气，蚊虫无影踪。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "蚊香",
+    ans_analyze: "驱蚊使用的圆盘蚊香。",
+    difficulty: "1",
+    choose: "蚊香漏斗筷子牙刷毛巾肥皂"
+}, {
+    code: "MY000078",
+    puzzle: "靠墙大铁箱，吃电不吃粮。吹出一阵风，冬暖又夏凉。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "**",
+    ans_result: "空调",
+    ans_analyze: "制冷制热使用空调。",
+    difficulty: "1",
+    choose: "空调冰箱洗衣机微波炉火锅"
+}, {
+    code: "MY000079",
+    puzzle: "你笑它也笑，你哭它亦哭。生活不离它，出门照一照。",
+    ans_scope: "打一日常用品",
+    ans_prompt: "*子",
+    ans_result: "镜子",
+    ans_analyze: "照镜子。",
+    difficulty: "1",
+    choose: "镜子拖把漏斗筷子牙刷毛巾"
+}, {
+    code: "MY000080",
+    puzzle: "少时发如雪，老来头发黑。无事戴帽子，有事须露头。",
+    ans_scope: "打一文体用品",
+    ans_prompt: "*笔",
+    ans_result: "毛笔",
+    ans_analyze: "蘸墨水写字。",
+    difficulty: "1",
+    choose: "毛笔迅科鸭广法好患懒照鸟"
+}, {
+    code: "MY000081",
+    puzzle: "白如雪，轻飘飘，写字画画用的着。",
+    ans_scope: "打一文体用品",
+    ans_prompt: "*",
+    ans_result: "纸",
+    ans_analyze: "写字用纸。",
+    difficulty: "1",
+    choose: "纸笔墨砚生林江春下周及从"
+}, {
+    code: "MY000082",
+    puzzle: "天天伴我上学堂，读书写字立身旁。腹有诗书虽万千，不识一字是文盲。",
+    ans_scope: "打一文体用品",
+    ans_prompt: "*包",
+    ans_result: "书包",
+    ans_analyze: "装书使用书包。",
+    difficulty: "1",
+    choose: "书包橡皮铅笔直尺剪刀石杜"
+}, {
+    code: "MY000083",
+    puzzle: "看起来像糖，想吃不能尝。哪里有错字，它就来帮忙。",
+    ans_scope: "打一文体用品",
+    ans_prompt: "*皮",
+    ans_result: "橡皮",
+    ans_analyze: "修改错字使用橡皮。",
+    difficulty: "1",
+    choose: "橡皮铅笔书包直尺剪刀书本"
+}, {
+    code: "MY000084",
+    puzzle: "千里之堤溃于蚁穴",
+    ans_scope: "打一成语",
+    ans_prompt: "因***",
+    ans_result: "因小失大",
+    ans_analyze: "蚁穴为“小”，千里之堤为“大”。",
+    difficulty: "1",
+    choose: "因小失大材施教势利导制宜"
+}, {
+    code: "MY000085",
+    puzzle: "遥知兄弟登高处",
+    ans_scope: "打一成语",
+    ans_prompt: "一***",
+    ans_result: "一览无余",
+    ans_analyze: "登高望远，一览无余。",
+    difficulty: "1",
+    choose: "一览无余事无成路平安心意"
+}, {
+    code: "MY000086",
+    puzzle: "鸟语花香",
+    ans_scope: "打一成语",
+    ans_prompt: "有***",
+    ans_result: "有声有色",
+    ans_analyze: "”鸟“和”花“分别对应“有声”和“有色”。",
+    difficulty: "1",
+    choose: "有声有色朝一日机可乘所思"
+}, {
+    code: "MY000087",
+    puzzle: "小巷偶遇",
+    ans_scope: "打一成语",
+    ans_prompt: "**相*",
+    ans_result: "狭路相逢",
+    ans_analyze: "“狭路”指“小巷”。",
+    difficulty: "3",
+    choose: "狭路相逢面面觑守望助旗鼓"
+}, {
+    code: "MY000088",
+    puzzle: "纳妾休妻",
+    ans_scope: "打一成语",
+    ans_prompt: "***大",
+    ans_result: "因小失大",
+    ans_analyze: "妻为大，妾为小。",
+    difficulty: "1",
+    choose: "因小失大材施教势利导制宜"
+}, {
+    code: "MY000089",
+    puzzle: "不是熟人不相见",
+    ans_scope: "打一成语",
+    ans_prompt: "***面",
+    ans_result: "别开生面",
+    ans_analyze: "不是熟人就是生人，不见生人。",
+    difficulty: "1",
+    choose: "别开生面泪流满抛头露威风"
+}, {
+    code: "MY000090",
+    puzzle: "照个全家福",
+    ans_scope: "打一成语",
+    ans_prompt: "***合",
+    ans_result: "一拍即合",
+    ans_analyze: "一起拍一张合影。",
+    difficulty: "1",
+    choose: "一拍即合前仰后天作之情理"
+}, {
+    code: "MY000091",
+    puzzle: "打着跟头上场，打着跟头退场",
+    ans_scope: "打一成语",
+    ans_prompt: "*来**",
+    ans_result: "翻来覆去",
+    ans_analyze: "“翻”和“覆”意思相同，翻着跟头来去。",
+    difficulty: "1",
+    choose: "翻来覆去人往逆顺受时运转"
+}, {
+    code: "MY000092",
+    puzzle: "昼夜辨别清楚",
+    ans_scope: "打一成语",
+    ans_prompt: "***明",
+    ans_result: "黑白分明",
+    ans_analyze: "“昼夜”对应“黑白”，“看清楚”对应“分明”。",
+    difficulty: "1",
+    choose: "黑白分明正大光来历不先见"
+}, {
+    code: "MY000093",
+    puzzle: "流星雨",
+    ans_scope: "打一成语",
+    ans_prompt: "天***",
+    ans_result: "天花乱坠",
+    ans_analyze: "“流星”对应“天花”。",
+    difficulty: "3",
+    choose: "天花乱坠罗地网府之国网恢"
+}, {
+    code: "MY000094",
+    puzzle: "红歌会",
+    ans_scope: "打一成语",
+    ans_prompt: "有***",
+    ans_result: "有声有色",
+    ans_analyze: "“歌会”对应“有声”，“红色”对应“有色”。",
+    difficulty: "3",
+    choose: "有声有色朝一日机可乘所思"
+}, {
+    code: "MY000095",
+    puzzle: "空投计划要保密",
+    ans_scope: "打一成语",
+    ans_prompt: "**不*",
+    ans_result: "下落不明",
+    ans_analyze: "“空投”对应“下落”，“保密”对应“不明”。",
+    difficulty: "1",
+    choose: "下落不明美中足川流息一动"
+}, {
+    code: "MY000096",
+    puzzle: "一把辛酸泪",
+    ans_scope: "打一成语",
+    ans_prompt: "***珠",
+    ans_result: "掌上明珠",
+    ans_analyze: "“辛酸泪”对应“明珠”，“一把”对应“掌上”。",
+    difficulty: "3",
+    choose: "掌上明珠买椟还妙语连安覆"
+}, {
+    code: "MY000097",
+    puzzle: "刚死里逃生,又走进鬼门关",
+    ans_scope: "打一成语",
+    ans_prompt: "出***",
+    ans_result: "出生入死",
+    ans_analyze: "“死里逃生”对应“生”，“鬼门关”对应“死”。",
+    difficulty: "1",
+    choose: "出生入死尔反尔其不意人料"
+}, {
+    code: "MY000098",
+    puzzle: "牧童玩吉他",
+    ans_scope: "打一成语",
+    ans_prompt: "*牛**",
+    ans_result: "对牛弹琴",
+    ans_analyze: "“牧童”是指放牧（牛、羊）的儿童。",
+    difficulty: "1",
+    choose: "对牛弹琴蜗行步鬼蛇神别赏"
+}, {
+    code: "MY000099",
+    puzzle: "车船准点旅客欢喜",
+    ans_scope: "打一成语",
+    ans_prompt: "及***",
+    ans_result: "及时行乐",
+    ans_analyze: "谜底应顿读作“及时行，乐”。",
+    difficulty: "3",
+    choose: "及时行乐笄年华锋而试绿于"
+}, {
+    code: "MY000100",
+    puzzle: "乐观面对债务",
+    ans_scope: "打一生理现象",
+    ans_prompt: "*欠",
+    ans_result: "哈欠",
+    ans_analyze: "乐观对应“哈”，债务对应“欠”。",
+    difficulty: "1",
+    choose: "哈欠鱼套引下更婆镜能断蛳"
+}, {
+    code: "MY000101",
+    puzzle: "蜜饯黄连",
+    ans_scope: "打一成语",
+    ans_prompt: "同***",
+    ans_result: "同甘共苦",
+    ans_analyze: "蜜饯是甜（甘）的，黄连是苦的，连在一起就是...",
+    difficulty: "1",
+    choose: "同甘共苦生共死心协力敌忾"
+}, {
+    code: "MY000102",
+    puzzle: "爱好旅游",
+    ans_scope: "打一成语",
+    ans_prompt: "喜***",
+    ans_result: "喜出望外",
+    ans_analyze: "爱好旅游可解为喜欢出门看看外面",
+    difficulty: "1",
+    choose: "喜出望外笑颜开怒无常好大"
+}, {
+    code: "MY000103",
+    puzzle: "武大郎设宴",
+    ans_scope: "打一成语",
+    ans_prompt: "***座",
+    ans_result: "高朋满座",
+    ans_analyze: "武大郎个子矮小，如果他请客那饭桌上的都是比他高的人",
+    difficulty: "1",
+    choose: "高朋满座语惊四无虚席孤卿"
+}, {
+    code: "MY000104",
+    puzzle: "元宵之后柳吐芽",
+    ans_scope: "打一成语",
+    ans_prompt: "节***",
+    ans_result: "节外生枝",
+    ans_analyze: "元宵“节”之后“生”了新“枝”叶。",
+    difficulty: "1",
+    choose: "节外生枝强干弱同气连胜梳"
+}, {
+    code: "MY000105",
+    puzzle: "世居江西",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "泄",
+    ans_analyze: "“江”字的西部为“氵”，与“世”组合成一字。",
+    difficulty: "1",
+    choose: "泄新患调说生苦牙归镝苏阔"
+}, {
+    code: "MY000106",
+    puzzle: "出口成衣",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "哀",
+    ans_analyze: "“哀”字出去“口”，剩下“衣”。",
+    difficulty: "1",
+    choose: "哀盛水藕封腔衣李年枣太烂"
+}, {
+    code: "MY000107",
+    puzzle: "仅仅少了两人",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "双",
+    ans_analyze: "“仅仅”二字少了两个“人”。",
+    difficulty: "1",
+    choose: "双筷独顶息天树争外嘻中欲"
+}, {
+    code: "MY000108",
+    puzzle: "双“十一”",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "圭",
+    ans_analyze: "“十一”组合成“土”，两个“土”组合到一起。",
+    difficulty: "3",
+    choose: "圭宵道护无断长许武开陈模"
+}, {
+    code: "MY000109",
+    puzzle: "下岗之前到前线",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "纲",
+    ans_analyze: "“下岗之前”解为“岗”字去掉前半部分为“冈”，“线”字的前半部分为“纟”，合成一字",
+    difficulty: "1",
+    choose: "纲看机座卿峰味长三居摆安"
+}, {
+    code: "MY000110",
+    puzzle: "东坡偕女抵西湖",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "婆",
+    ans_analyze: "“坡”字的东部为“皮”，“女”明扣，“湖”字的西部为“氵”，合成一字",
+    difficulty: "3",
+    choose: "婆照行奋乌拍橡利屈夫侈作"
+}, {
+    code: "MY000111",
+    puzzle: "融四岁，能让梨",
+    ans_scope: "打一四字口语",
+    ans_prompt: "不***",
+    ans_result: "不大懂事",
+    ans_analyze: "融四岁(不大)；能让梨（懂事）",
+    difficulty: "1",
+    choose: "不大懂事目面识老根烂行祸"
+}, {
+    code: "MY000112",
+    puzzle: "侧门不可走",
+    ans_scope: "打一公司名",
+    ans_prompt: "中*",
+    ans_result: "中通",
+    ans_analyze: "谜底别解为“中间可通行”",
+    difficulty: "1",
+    choose: "中通圭妻表怀哈翻海安论条"
+}, {
+    code: "MY000113",
+    puzzle: "左右护法皆离去",
+    ans_scope: "打一城市简称",
+    ans_prompt: "*",
+    ans_result: "沪",
+    ans_analyze: "“护”字的左边和“法”字的右边离去掉，余下“户”和“氵”，合成一字",
+    difficulty: "1",
+    choose: "沪鄂京津豫鲁晋渝赣湘蜀滇"
+}, {
+    code: "MY000114",
+    puzzle: "百分之九十翻新样",
+    ans_scope: "打一成语",
+    ans_prompt: "一***",
+    ans_result: "一成不变",
+    ans_analyze: "别解为“有一成没变样”，反扣谜面。",
+    difficulty: "1",
+    choose: "一成不变事无成知半解五十"
+}, {
+    code: "MY000115",
+    puzzle: "失去土地的人们",
+    ans_scope: "打一国家名称",
+    ans_prompt: "也*",
+    ans_result: "也门",
+    ans_analyze: "“地”字失去“土”，余下“也”；“们”字失去“人”，剩下“门”",
+    difficulty: "1",
+    choose: "也门年迅吃论分别见弟鹤味"
+}, {
+    code: "MY000116",
+    puzzle: "可杀不可辱",
+    ans_scope: "打一节日",
+    ans_prompt: "**节",
+    ans_result: "护士节",
+    ans_analyze: "别解为“维护士人的气节”",
+    difficulty: "1",
+    choose: "护士节情人中秋元旦妇女春"
+}, {
+    code: "MY000117",
+    puzzle: "宝玉爱黛玉，也爱宝钗",
+    ans_scope: "打一物",
+    ans_prompt: "*表",
+    ans_result: "钟表",
+    ans_analyze: "谜底别解为“钟情于表亲”",
+    difficulty: "1",
+    choose: "钟表衣赏斯道照治石免盛顾"
+}, {
+    code: "MY000118",
+    puzzle: "少帅被囚",
+    ans_scope: "打一元代人名",
+    ans_prompt: "**卿",
+    ans_result: "关汉卿",
+    ans_analyze: "少帅，指张学良，字汉卿",
+    difficulty: "1",
+    choose: "关汉卿忽必烈赵孟頫免盛顾"
+}, {
+    code: "MY000119",
+    puzzle: "曹雪芹洒泪写红楼",
+    ans_scope: "打一成语",
+    ans_prompt: "水***",
+    ans_result: "水落石出",
+    ans_analyze: "“泪”扣“水”；“石”代指“石头记”《红楼梦》又名《石头记》",
+    difficulty: "1",
+    choose: "水落石出秀山明乳交融不服"
+}, {
+    code: "MY000120",
+    puzzle: "股票久跌难脱手",
+    ans_scope: "打一床上用品",
+    ans_prompt: "**",
+    ans_result: "被套",
+    ans_analyze: "别解为“被套牢了”",
+    difficulty: "1",
+    choose: "被套手枕墨明从大西模负尼"
+}, {
+    code: "MY000121",
+    puzzle: "早不说晚不说",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "许",
+    ans_analyze: "“中午说”为言字旁加“午”。",
+    difficulty: "3",
+    choose: "许哈忑魁才纲红恙弱周旅沈"
+}, {
+    code: "MY000122",
+    puzzle: "进水行不成",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "衍",
+    ans_analyze: "“行”字左右拆，中间加三点水。",
+    difficulty: "3",
+    choose: "衍山轴纸娘甘忑离丝负长婆"
+}, {
+    code: "MY000123",
+    puzzle: "熙熙攘攘",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "侈",
+    ans_analyze: "形容人多。",
+    difficulty: "1",
+    choose: "侈久赞圆纸增免泄猴智燕慎"
+}, {
+    code: "MY000124",
+    puzzle: "一一入史册",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "更",
+    ans_analyze: "“史”加两个“一”为“更”。",
+    difficulty: "1",
+    choose: "更丝闲阴论双魁目树履经客"
+}, {
+    code: "MY000125",
+    puzzle: "大油田出油",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "奋",
+    ans_analyze: "“大油田”去掉“油”，剩下“大田”二字，合为“奋”字。",
+    difficulty: "1",
+    choose: "奋掌旅耐流宁都把表鸯贾告"
+}, {
+    code: "MY000126",
+    puzzle: "人间草木间",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "茶",
+    ans_analyze: "“茶”字可以拆分为草字、“人”字和“木”字。",
+    difficulty: "3",
+    choose: "茶阔红小机馆更罗蚊圭目龙"
+}, {
+    code: "MY000127",
+    puzzle: "周末喜相逢",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "嘻",
+    ans_analyze: "周末为“口”再加“喜”为“嘻”。",
+    difficulty: "1",
+    choose: "嘻二藕对笋其钟武张孤林橡"
+}, {
+    code: "MY000128",
+    puzzle: "前晚、昨晚、今晚、明晚",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "罗",
+    ans_analyze: "四个晚上，晚上又为“夕”。",
+    difficulty: "1",
+    choose: "罗表峰绝橡年道当白离鱼慎"
+}, {
+    code: "MY000129",
+    puzzle: "兔子头上戴顶帽，满肚苦水无处倒",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "冤",
+    ans_analyze: "“兔”字头上加帽子为“冤”，苦水无处倒也形容冤。",
+    difficulty: "1",
+    choose: "冤觉谈进皂B燕事桂妻改书"
+}, {
+    code: "MY000130",
+    puzzle: "没有恒心，却有闲心",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "桓",
+    ans_analyze: "“恒”去掉竖心旁，加上“闲”中心的“木”。",
+    difficulty: "1",
+    choose: "桓四井净佬安承镜又文洛筷"
+}, {
+    code: "MY000131",
+    puzzle: "心存不善，有口难言",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "亚",
+    ans_analyze: "“亚”加“心”为“恶”，“亚”加“口”为“哑”。",
+    difficulty: "3",
+    choose: "亚州子节甘几连春关猴增兴"
+}, {
+    code: "MY000132",
+    puzzle: "加一口，无欢喜；加一寸，没有错",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "又",
+    ans_analyze: "“又”加“口”为“叹”，“又”加“寸”为“对”。",
+    difficulty: "1",
+    choose: "又台入别落燕肯模李出人赤"
+}, {
+    code: "MY000133",
+    puzzle: "金钱在旁边，滴水不沾边",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "镝",
+    ans_analyze: "“滴”去掉“水”，再加金字旁。",
+    difficulty: "1",
+    choose: "镝藕包为机苏芳妙情黑点羽"
+}, {
+    code: "MY000134",
+    puzzle: "两点一直，一直两点",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "慎",
+    ans_analyze: "“两点一直”为“忄”，“一直两点”为“真”。",
+    difficulty: "1",
+    choose: "慎李梳示引长畏真动居怀拖"
+}, {
+    code: "MY000135",
+    puzzle: "一口吃掉牛尾巴",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "告",
+    ans_analyze: "“牛”的下部换为“口”。",
+    difficulty: "1",
+    choose: "告士看伞腔鹤忑毛申松鸣沈"
+}, {
+    code: "MY000136",
+    puzzle: "清明前夜",
+    ans_scope: "打一传统食物",
+    ans_prompt: "**",
+    ans_result: "元宵",
+    ans_analyze: "清朝明朝之前是“元”朝，“夜”即“宵”。",
+    difficulty: "1",
+    choose: "元宵士苏根于点未佬打挑毛"
+}, {
+    code: "MY000137",
+    puzzle: "话筒产地北京城",
+    ans_scope: "打一粮食",
+    ans_prompt: "燕*",
+    ans_result: "燕麦",
+    ans_analyze: "话筒等同于“麦”，北京古称“燕京”。",
+    difficulty: "1",
+    choose: "燕麦高粱红薯玉米土豆黄豆"
+}, {
+    code: "MY000138",
+    puzzle: "迷上米老鼠搭档",
+    ans_scope: "打一汤名",
+    ans_prompt: "***丝",
+    ans_result: "老鸭粉丝",
+    ans_analyze: "米老鼠搭档是唐老鸭，迷上指粉丝。",
+    difficulty: "1",
+    choose: "老鸭粉丝念水承未顾汉付弟"
+}, {
+    code: "MY000139",
+    puzzle: "大手大脚",
+    ans_scope: "打一树名",
+    ans_prompt: "金**",
+    ans_result: "金钱松",
+    ans_analyze: "大手大脚别解为用钱出手很宽松。",
+    difficulty: "1",
+    choose: "金钱松忐庆井出气三名别当"
+}, {
+    code: "MY000140",
+    puzzle: "园中观夜景",
+    ans_scope: "打一传统节日",
+    ans_prompt: "**节",
+    ans_result: "元宵节",
+    ans_analyze: "“园”字中间是“元”，“夜景”表示“宵”之意。",
+    difficulty: "1",
+    choose: "元宵节戒鄂芳才收因忑动路"
+}, {
+    code: "MY000141",
+    puzzle: "唐代瑰宝",
+    ans_scope: "打一明代医学家",
+    ans_prompt: "李**",
+    ans_result: "李时珍",
+    ans_analyze: "唐代世称“李唐王朝”，瑰宝为珍宝之意。",
+    difficulty: "1",
+    choose: "李时珍香毛歌马生武不年举"
+}, {
+    code: "MY000142",
+    puzzle: "贾宝玉求婚",
+    ans_scope: "打一美国总统",
+    ans_prompt: "**",
+    ans_result: "林肯",
+    ans_analyze: "贾宝玉向林黛玉求婚，“林”需要同意。",
+    difficulty: "1",
+    choose: "林肯拜登布什卡特泰勒里根"
+}, {
+    code: "MY000143",
+    puzzle: "爷爷打冲锋",
+    ans_scope: "打一南北朝数学家",
+    ans_prompt: "**之",
+    ans_result: "祖冲之",
+    ans_analyze: "“爷爷”是指“祖”。",
+    difficulty: "1",
+    choose: "祖冲之秦九韶徐光启欲共芳"
+}, {
+    code: "MY000144",
+    puzzle: "解决了住宿难的问题",
+    ans_scope: "打一唐代诗人",
+    ans_prompt: "*居*",
+    ans_result: "白居易",
+    ans_analyze: "“住宿”指“居”，有住宿容易的意思。",
+    difficulty: "1",
+    choose: "白居易李清照王安石杜甫李"
+}, {
+    code: "MY000145",
+    puzzle: "客户来贺",
+    ans_scope: "打一《水浒传》人物",
+    ans_prompt: "*门*",
+    ans_result: "西门庆",
+    ans_analyze: "主为东道，客为西席，所以“客”扣“西”；“门”与“户”、“庆”与“贺”近义相扣。",
+    difficulty: "1",
+    choose: "西门庆公孙胜呼延灼鲁智深"
+}, {
+    code: "MY000146",
+    puzzle: "贾琏之母",
+    ans_scope: "打一《水浒传》人物",
+    ans_prompt: "王*",
+    ans_result: "王婆",
+    ans_analyze: "王熙凤的婆婆简化为“王婆”。",
+    difficulty: "1",
+    choose: "王婆英都尉府中使令胜勇兴"
+}, {
+    code: "MY000147",
+    puzzle: "商家结彩庆新年",
+    ans_scope: "打一《红楼梦》人物",
+    ans_prompt: "*迎*",
+    ans_result: "贾迎春",
+    ans_analyze: "古代称商家为商贾。",
+    difficulty: "1",
+    choose: "贾迎春宝玉元探惜琴钗姨妈"
+}, {
+    code: "MY000148",
+    puzzle: "遥知不是雪，为有暗香来",
+    ans_scope: "打一《红楼梦》人物",
+    ans_prompt: "*人",
+    ans_result: "袭人",
+    ans_analyze: "出自王安石《梅花》，写梅花香气袭人。",
+    difficulty: "1",
+    choose: "袭人晴雯宝珠碧月钗甄英莲"
+}, {
+    code: "MY000149",
+    puzzle: "开业不必择吉日",
+    ans_scope: "打一金庸小说人物",
+    ans_prompt: "张**",
+    ans_result: "张无忌",
+    ans_analyze: "开张无需忌惮。",
+    difficulty: "1",
+    choose: "张无忌三丰翠山屠户五侠维"
+}, {
+    code: "MY000150",
+    puzzle: "羊年出生",
+    ans_scope: "打一外国影片",
+    ans_prompt: "未***",
+    ans_result: "未来世界",
+    ans_analyze: "生肖羊对应“未”，羊年出生对应“未”年来到世界。",
+    difficulty: "1",
+    choose: "未来世界载久沪喜王七闲会"
+}, {
+    code: "MY000151",
+    puzzle: "苏州开采碧螺春",
+    ans_scope: "打一乐队",
+    ans_prompt: "苏**",
+    ans_result: "苏打绿",
+    ans_analyze: "别解为“在苏州打掉绿色叶子”。",
+    difficulty: "1",
+    choose: "苏打绿武患表居空橡视览刷"
+}, {
+    code: "MY000152",
+    puzzle: "祖孙三代一根筋",
+    ans_scope: "打一机械零件",
+    ans_prompt: "*承",
+    ans_result: "轴承",
+    ans_analyze: "北方话，称固执为“轴”。",
+    difficulty: "1",
+    choose: "轴承顺反圆枣双化蚊乌久屈"
+}, {
+    code: "MY000153",
+    puzzle: "环保之声",
+    ans_scope: "打一铅笔型号",
+    ans_prompt: "*B",
+    ans_result: "HB",
+    ans_analyze: "取“环保”两字的声母。",
+    difficulty: "1",
+    choose: "HBSLWOPJMNQV"
+}, {
+    code: "MY000154",
+    puzzle: "开罗",
+    ans_scope: "打一电商",
+    ans_prompt: "**多",
+    ans_result: "拼多多",
+    ans_analyze: "罗为四夕，意为多多。",
+    difficulty: "1",
+    choose: "拼多多京东淘宝凡客网易拿"
+}, {
+    code: "MY000155",
+    puzzle: "上等徽墨",
+    ans_scope: "打一流行语",
+    ans_prompt: "**黑",
+    ans_result: "高级黑",
+    ans_analyze: "上等徽墨颜色黑。",
+    difficulty: "1",
+    choose: "高级黑立拿所入根息净希变"
+}, {
+    code: "MY000156",
+    puzzle: "万事万物都在变",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "通化",
+    ans_analyze: "通通都在变化。",
+    difficulty: "1",
+    choose: "通化长春四平辽源白城延边"
+}, {
+    code: "MY000157",
+    puzzle: "大江东去",
+    ans_scope: "打一地名",
+    ans_prompt: "上*",
+    ans_result: "上海",
+    ans_analyze: "“大江东去”别解为“上海里去”。",
+    difficulty: "1",
+    choose: "上海无锡南京广州神杖深圳"
+}, {
+    code: "MY000158",
+    puzzle: "头回见面",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "新会",
+    ans_analyze: "“头回”为“新”，见面又解为“会”面。",
+    difficulty: "1",
+    choose: "新会汕头佛山韶关惠州梅州"
+}, {
+    code: "MY000159",
+    puzzle: "不做对不起人的事",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "遵义",
+    ans_analyze: "遵守道义。",
+    difficulty: "1",
+    choose: "遵义铜仁毕节黔南贵阳安顺"
+}, {
+    code: "MY000160",
+    puzzle: "掌声不停",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "延庆",
+    ans_analyze: "庆祝延续。",
+    difficulty: "1",
+    choose: "延庆海淀朝阳大兴昌平顺义"
+}, {
+    code: "MY000161",
+    puzzle: "普天之下皆欢喜",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "大兴",
+    ans_analyze: "“普天之下”指“大”，欢喜为“兴”。",
+    difficulty: "1",
+    choose: "大兴延问海淀朝阳顺义平谷"
+}, {
+    code: "MY000162",
+    puzzle: "心太软",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "怀柔",
+    ans_analyze: "“怀”指“心”，“柔”指“软”。",
+    difficulty: "1",
+    choose: "怀柔延庆海淀朝阳顺义平谷"
+}, {
+    code: "MY000163",
+    puzzle: "破门而入",
+    ans_scope: "打一地名",
+    ans_prompt: "*进",
+    ans_result: "武进",
+    ans_analyze: "使用武力进入。",
+    difficulty: "3",
+    choose: "武进衣患梳归无原轴乱大拿"
+}, {
+    code: "MY000164",
+    puzzle: "东边西边北边都堵塞",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "南通",
+    ans_analyze: "只能从南边通过。",
+    difficulty: "1",
+    choose: "南通无锡徐州淮安盐城镇江"
+}, {
+    code: "MY000165",
+    puzzle: "琴棋书画样样皆通",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "四会",
+    ans_analyze: "四样全会。",
+    difficulty: "1",
+    choose: "四会端州鼎湖高要广宁怀集"
+}, {
+    code: "MY000166",
+    puzzle: "东南西北，均无战事。",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "四平",
+    ans_analyze: "四个方向皆平安。",
+    difficulty: "1",
+    choose: "四平长春辽源白城延边通化"
+}, {
+    code: "MY000167",
+    puzzle: "八月飘香香满园",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "桂林",
+    ans_analyze: "八月桂花香。",
+    difficulty: "1",
+    choose: "桂林柳州玉林南宁河池百色"
+}, {
+    code: "MY000168",
+    puzzle: "东征西讨北伐",
+    ans_scope: "打一地名",
+    ans_prompt: "**",
+    ans_result: "南宁",
+    ans_analyze: "南边安宁。",
+    difficulty: "1",
+    choose: "南宁桂林柳州玉林河池百色"
+}, {
+    code: "MY000169",
+    puzzle: "湖北盛产此物",
+    ans_scope: "打一地名",
+    ans_prompt: "鄂***",
+    ans_result: "鄂尔多斯",
+    ans_analyze: "“鄂”为湖北的简称。",
+    difficulty: "1",
+    choose: "鄂尔多斯红即士粉立张调改"
+}, {
+    code: "MY000170",
+    puzzle: "消灭赤字",
+    ans_scope: "打一国家",
+    ans_prompt: "**",
+    ans_result: "不丹",
+    ans_analyze: "“丹”指红色。",
+    difficulty: "3",
+    choose: "不丹越南老挝缅甸泰国智利"
+}, {
+    code: "MY000171",
+    puzzle: "期盼冬天",
+    ans_scope: "打一国家",
+    ans_prompt: "*腊",
+    ans_result: "希腊",
+    ans_analyze: "“期盼”别解为“希”，“腊”别解为为冬天。",
+    difficulty: "1",
+    choose: "希腊捷克葡萄牙意大利苏联"
+}, {
+    code: "MY000172",
+    puzzle: "天京演奏胡琴",
+    ans_scope: "打一国家",
+    ans_prompt: "洪***",
+    ans_result: "洪都拉斯",
+    ans_analyze: "洪秀全将国都南京改名“天京”，拉胡琴即演奏胡琴。",
+    difficulty: "1",
+    choose: "洪都拉斯告平南治出陈弱经"
+}, {
+    code: "MY000173",
+    puzzle: "佛祖收服孙大圣",
+    ans_scope: "打一茶名",
+    ans_prompt: "太**魁",
+    ans_result: "太平猴魁",
+    ans_analyze: "别解为“猴王从此太平了”。",
+    difficulty: "3",
+    choose: "太平猴魁信阳毛尖西湖龙井"
+}, {
+    code: "MY000174",
+    puzzle: "安溪名茶展销会",
+    ans_scope: "打一四字俗语",
+    ans_prompt: "大***",
+    ans_result: "大摆乌龙",
+    ans_analyze: "福建安溪盛产乌龙茶。",
+    difficulty: "1",
+    choose: "大摆乌龙羽路宁寻井质间鄂"
+}, {
+    code: "MY000175",
+    puzzle: "泪痕和酒，沾了双罗袖。",
+    ans_scope: "打一成语",
+    ans_prompt: "***水",
+    ans_result: "一衣带水",
+    ans_analyze: "“双罗袖”指衣服，泪痕和酒都为“水”。",
+    difficulty: "3",
+    choose: "一衣带水变台猴离恙懂之义"
+}, {
+    code: "MY000176",
+    puzzle: "欢喜入心肠",
+    ans_scope: "打一成语",
+    ans_prompt: "乐***",
+    ans_result: "乐在其中",
+    ans_analyze: "“欢喜”指“乐”，”心肠“另解为“其中”。",
+    difficulty: "1",
+    choose: "乐在其中说欠罗歌泄拼及嘻"
+}, {
+    code: "MY000177",
+    puzzle: "脸上依旧风流相",
+    ans_scope: "打一成语",
+    ans_prompt: "面***",
+    ans_result: "面不改色",
+    ans_analyze: "脸上对应“面”，“风流相”对应“色”。",
+    difficulty: "1",
+    choose: "面不改色红耳赤目全非八方"
+}, {
+    code: "MY000178",
+    puzzle: "自此无复子孙忧",
+    ans_scope: "打一成语",
+    ans_prompt: "***患",
+    ans_result: "不留后患",
+    ans_analyze: "无子孙忧即不留后患。",
+    difficulty: "1",
+    choose: "不留后患饱经忧人满为视柔"
+}, {
+    code: "MY000179",
+    puzzle: "家家泉水，户户垂柳。",
+    ans_scope: "打一成语",
+    ans_prompt: "井***",
+    ans_result: "井井有条",
+    ans_analyze: "“井”指“泉水”,“垂柳”即“有条”。",
+    difficulty: "1",
+    choose: "井井有条底之蛙然有序路尼"
+}, {
+    code: "MY000180",
+    puzzle: "揭竿而起，便下双城。",
+    ans_scope: "打一成语",
+    ans_prompt: "**两*",
+    ans_result: "一举两得",
+    ans_analyze: "“揭竿”为“一举”，“双城”为两得。",
+    difficulty: "1",
+    choose: "一举两得三天头刀断势不立"
+}, {
+    code: "MY000181",
+    puzzle: "竹根抽笋出东墙",
+    ans_scope: "打一成语",
+    ans_prompt: "节***",
+    ans_result: "节外生枝",
+    ans_analyze: "竹子有节，“出东墙”对应“外”。",
+    difficulty: "1",
+    choose: "节外生枝强干弱同气连胜梳"
+}, {
+    code: "MY000182",
+    puzzle: "红楼梦中鸳鸯",
+    ans_scope: "打一成语",
+    ans_prompt: "一***",
+    ans_result: "一石二鸟",
+    ans_analyze: "《红楼梦》又名《石头记》，鸳鸯成双。",
+    difficulty: "1",
+    choose: "一石二鸟言为定路平安半解"
+}, {
+    code: "MY000183",
+    puzzle: "个高个矮辩不休",
+    ans_scope: "打一成语",
+    ans_prompt: "争***",
+    ans_result: "争长论短",
+    ans_analyze: "“高”“矮”对应“长短”，“辨”对应争论。",
+    difficulty: "1",
+    choose: "争长论短先恐后奇斗艳吃醋"
+}, {
+    code: "MY000184",
+    puzzle: "轿夫都是陌生人",
+    ans_scope: "打一成语",
+    ans_prompt: "***举",
+    ans_result: "不识抬举",
+    ans_analyze: "“陌生人”对应“不识”，“轿夫”对应“抬举”。",
+    difficulty: "1",
+    choose: "不识抬举由自主约而同带卿"
+}, {
+    code: "MY000185",
+    puzzle: "隐形人",
+    ans_scope: "打一成语",
+    ans_prompt: "*貌**",
+    ans_result: "其貌不扬",
+    ans_analyze: "“扬”对应“隐形”，为不张扬、不外露。",
+    difficulty: "3",
+    choose: "其貌不扬武顾软座原汤带卿"
+}, {
+    code: "MY000186",
+    puzzle: "常败将军天下闻",
+    ans_scope: "打一成语",
+    ans_prompt: "***名",
+    ans_result: "久负盛名",
+    ans_analyze: "“常败”对应“久负”，“天下闻”对应“盛名”。",
+    difficulty: "1",
+    choose: "久负盛名举世闻徒有虚宁示"
+}, {
+    code: "MY000187",
+    puzzle: "蒋母腹内孕介石",
+    ans_scope: "打一成语",
+    ans_prompt: "***怀",
+    ans_result: "正中下怀",
+    ans_analyze: "蒋介石名中正，“孕”对应“下怀”。",
+    difficulty: "1",
+    choose: "正中下怀触目伤耿耿于难孔"
+}, {
+    code: "MY000188",
+    puzzle: "抚琴来到大厅外",
+    ans_scope: "打一成语",
+    ans_prompt: "挑***",
+    ans_result: "挑拨离间",
+    ans_analyze: "“抚琴”对应“挑拨”，“大厅外”对应离开房间。",
+    difficulty: "1",
+    choose: "挑拨离间肥拣瘦三拣四懂可"
+}, {
+    code: "MY000189",
+    puzzle: "残红飘尽泪珠抛",
+    ans_scope: "打一成语",
+    ans_prompt: "**流*",
+    ans_result: "落花流水",
+    ans_analyze: "“残红”对应“落花”，“泪珠抛”对应“流水”。",
+    difficulty: "3",
+    choose: "落花流水钟息包申竹哥懂可"
+}, {
+    code: "MY000190",
+    puzzle: "只招九名",
+    ans_scope: "打一成语",
+    ans_prompt: "不***",
+    ans_result: "不可收拾",
+    ans_analyze: "招九个人，不要第十个人，“拾”是“十”的大写。",
+    difficulty: "1",
+    choose: "不可收拾由自主思议速之客"
+}, {
+    code: "MY000191",
+    puzzle: "69",
+    ans_scope: "打一成语",
+    ans_prompt: "七***",
+    ans_result: "七上八下",
+    ans_analyze: "数字顺序。",
+    difficulty: "1",
+    choose: "七上八下步之才成诗洛歌改"
+}, {
+    code: "MY000192",
+    puzzle: "“神雕大侠”仍未来",
+    ans_scope: "打一成语",
+    ans_prompt: "***及",
+    ans_result: "过犹不及",
+    ans_analyze: "“神雕大侠”杨过。",
+    difficulty: "1",
+    choose: "过犹不及愚不可始料望尘莫"
+}, {
+    code: "MY000193",
+    puzzle: "两个傻瓜要起身",
+    ans_scope: "打一成语",
+    ans_prompt: "**欲*",
+    ans_result: "蠢蠢欲动",
+    ans_analyze: "“蠢”引申义为“傻瓜”。",
+    difficulty: "1",
+    choose: "蠢蠢欲动呼之出畅所言鸭荣"
+}, {
+    code: "MY000194",
+    puzzle: "兵部尚书",
+    ans_scope: "打一成语",
+    ans_prompt: "***武",
+    ans_result: "能文能武",
+    ans_analyze: "兵部和尚书分别指“文”和“武”。",
+    difficulty: "1",
+    choose: "能文能武圆声识漏即究凯盛"
+}, {
+    code: "MY000195",
+    puzzle: "沿途尽扫禄山兵",
+    ans_scope: "打一成语",
+    ans_prompt: "***安",
+    ans_result: "一路平安",
+    ans_analyze: "一路扫平安禄山。",
+    difficulty: "1",
+    choose: "一路平安随遇而惶恐不即双"
+}, {
+    code: "MY000196",
+    puzzle: "只谒文庙",
+    ans_scope: "打一成语",
+    ans_prompt: "无***",
+    ans_result: "无孔不入",
+    ans_analyze: "文庙纪念孔子。",
+    difficulty: "1",
+    choose: "无孔不入价之宝独有偶举世"
+}, {
+    code: "MY000197",
+    puzzle: "吉他没琴弦",
+    ans_scope: "打一成语",
+    ans_prompt: "六***",
+    ans_result: "六根清净",
+    ans_analyze: "吉他有六根琴弦，又称“六弦琴”。",
+    difficulty: "1",
+    choose: "六根清净神无主道轮回正坠"
+}, {
+    code: "MY000198",
+    puzzle: "顺从老子",
+    ans_scope: "打一成语",
+    ans_prompt: "*绝**",
+    ans_result: "不绝于耳",
+    ans_analyze: "“绝”为“拒绝”，“不绝”为顺从，老子名李耳。",
+    difficulty: "3",
+    choose: "不绝于耳竹广墨罗陈智正坠"
+}, {
+    code: "MY000199",
+    puzzle: "博尔特说话急",
+    ans_scope: "打一成语",
+    ans_prompt: "快***",
+    ans_result: "快人快语",
+    ans_analyze: "博尔特，百米世界纪录保持者，扣“快人”，“说话急”扣“快语”。",
+    difficulty: "1",
+    choose: "快人快语马加鞭调面下化本"
+}, {
+    code: "MY000200",
+    puzzle: "旅社一楼客早满",
+    ans_scope: "打一成语",
+    ans_prompt: "***上",
+    ans_result: "后来居上",
+    ans_analyze: "谜底别解为“后面来的旅客住在上面”。",
+    difficulty: "1",
+    choose: "后来居上至高无蒸蒸日举易"
+}, {
+    code: "MY000201",
+    puzzle: "小儿二月去南宁",
+    ans_scope: "打一节日",
+    ans_prompt: "**",
+    ans_result: "元宵",
+    ans_analyze: "“去南宁”别解为“宁”字去掉南部，剩下“宀”，与“小儿二月”组合，可成“元宵”二字",
+    difficulty: "1",
+    choose: "元宵春节国庆端午中秋腊八"
+}, {
+    code: "MY000202",
+    puzzle: "小桥流水几相逢",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "沉",
+    ans_analyze: "“小桥”形扣“冖”，与“水”和“几”组合，可成“沉”字。",
+    difficulty: "1",
+    choose: "沉可黄马春昆见言引兄南枝"
+}, {
+    code: "MY000203",
+    puzzle: "一月二日有赛事",
+    ans_scope: "打一云南一地名",
+    ans_prompt: "*明",
+    ans_result: "昆明",
+    ans_analyze: "“有赛事”提示“比”之意。“比”与一个“月”和二个“日”组合，合成一地名",
+    difficulty: "1",
+    choose: "昆明衍拖利梳临沧丽江昭通"
+}, {
+    code: "MY000204",
+    puzzle: "阵前两方都得亏",
+    ans_scope: "打一城市简称",
+    ans_prompt: "*",
+    ans_result: "鄂",
+    ans_analyze: "“阵”字的前半部分为“阝”；“两方”别解为两个方格，扣“口口”；“亏”明扣，合成一字",
+    difficulty: "1",
+    choose: "鄂京津豫鲁晋渝赣湘蜀滇皖"
+}, {
+    code: "MY000205",
+    puzzle: "男人多数主动一点",
+    ans_scope: "打一《红楼梦》人名",
+    ans_prompt: "*玉",
+    ans_result: "妙玉",
+    ans_analyze: "“男人多数”反扣“女少”，合成“妙”；“主”字动了一点，合成一字",
+    difficulty: "1",
+    choose: "妙玉黛宝贾钏蟾子泉良黄燕"
+}, {
+    code: "MY000206",
+    puzzle: "姥姥的声音",
+    ans_scope: "打一三字流行词",
+    ans_prompt: "**腔",
+    ans_result: "娘娘腔",
+    ans_analyze: "“姥姥”，即娘的娘，这里会意成“娘娘”",
+    difficulty: "1",
+    choose: "娘娘腔弱履离鄂负根钟座封"
+}, {
+    code: "MY000207",
+    puzzle: "不分伯仲",
+    ans_scope: "打一外国电视剧",
+    ans_prompt: "兄**",
+    ans_result: "兄弟连",
+    ans_analyze: "“伯仲”，指兄弟的次第，亦代称“兄弟”。",
+    difficulty: "1",
+    choose: "兄弟连言戏庆圆带钟见羽样"
+}, {
+    code: "MY000208",
+    puzzle: "幸福的董永",
+    ans_scope: "打一电视剧",
+    ans_prompt: "家***",
+    ans_result: "家有仙妻",
+    ans_analyze: "神话故事《天仙配》人物，董永妻子是七仙女。",
+    difficulty: "1",
+    choose: "家有仙妻三犹小孤也拿阴多"
+}, {
+    code: "MY000209",
+    puzzle: "刷墙工夫好",
+    ans_scope: "打一成语",
+    ans_prompt: "***平",
+    ans_result: "粉饰太平",
+    ans_analyze: "“刷墙”就是用粉装饰，“工夫好”就是墙面平平滑滑。",
+    difficulty: "3",
+    choose: "粉饰太平家原黑墨摆坠卧间"
+}, {
+    code: "MY000210",
+    puzzle: "刚刚激怒某某某",
+    ans_scope: "打一成语",
+    ans_prompt: "才***",
+    ans_result: "才气过人",
+    ans_analyze: "谜底别解为“刚刚才气过人”。",
+    difficulty: "1",
+    choose: "才气过人疏学浅子佳人告为"
+}, {
+    code: "MY000211",
+    puzzle: "童话剧",
+    ans_scope: "打一成语",
+    ans_prompt: "视***",
+    ans_result: "视同儿戏",
+    ans_analyze: "谜底别解为“看起来跟儿童戏剧一样”。",
+    difficulty: "1",
+    choose: "视同儿戏而不见财上命才马"
+}, {
+    code: "MY000212",
+    puzzle: "三个儿童一个喜欢谜语",
+    ans_scope: "打一成语",
+    ans_prompt: "***猜",
+    ans_result: "两小无猜",
+    ans_analyze: "谜底别解为“两个小孩不喜欢猜谜”。",
+    difficulty: "1",
+    choose: "两小无猜重李载原印泄才马"
+}, {
+    code: "MY000213",
+    puzzle: "任期未缩短",
+    ans_scope: "打一成语",
+    ans_prompt: "不***",
+    ans_result: "不减当年",
+    ans_analyze: "“当”，别解为“担任、任职”。",
+    difficulty: "3",
+    choose: "不减当年祸满红欠义怪而懒"
+}, {
+    code: "MY000214",
+    puzzle: "谢绝拜访，健康保障",
+    ans_scope: "打一成语",
+    ans_prompt: "***恙",
+    ans_result: "别来无恙",
+    ans_analyze: "“谢绝拜访”扣“别来”，“健康保障”扣“无恙”。",
+    difficulty: "1",
+    choose: "别来无恙望腔关及婆慎七治"
+}, {
+    code: "MY000215",
+    puzzle: "不顾南北",
+    ans_scope: "打一成语",
+    ans_prompt: "东***",
+    ans_result: "东张西望",
+    ans_analyze: "不顾南北，只顾看东西。谜底反扣谜面。",
+    difficulty: "1",
+    choose: "东张西望抬宵粉包路燕界情"
+}, {
+    code: "MY000216",
+    puzzle: "饭菜虽香不爱做",
+    ans_scope: "打一成语",
+    ans_prompt: "好***",
+    ans_result: "好吃懒做",
+    ans_analyze: "“饭菜香”意扣“好吃”，“不爱做”别解为“懒做”。",
+    difficulty: "1",
+    choose: "好吃懒做大喜功为人师言语"
+}, {
+    code: "MY000217",
+    puzzle: "不忙见面",
+    ans_scope: "打一成语",
+    ans_prompt: "等***",
+    ans_result: "等闲视之",
+    ans_analyze: "谜底别解为“等有闲功夫的时候再见”。",
+    difficulty: "1",
+    choose: "等闲视之辈米下锅人物家观"
+}, {
+    code: "MY000218",
+    puzzle: "单骑征蜀中",
+    ans_scope: "打一成语",
+    ans_prompt: "一***",
+    ans_result: "一马平川",
+    ans_analyze: "“蜀中”，今四川省中部地。",
+    difficulty: "1",
+    choose: "一马平川言为定路平安半解"
+}, {
+    code: "MY000219",
+    puzzle: "美滋滋不知家在哪",
+    ans_scope: "打一成语",
+    ans_prompt: "得***",
+    ans_result: "得意门生",
+    ans_analyze: "“美滋滋”意扣“得意”，“门生”别解为“对家门陌生”。",
+    difficulty: "1",
+    choose: "得意门生意洋洋天独厚偿失"
+}, {
+    code: "MY000220",
+    puzzle: "火把接力传递",
+    ans_scope: "打一成语",
+    ans_prompt: "**一*",
+    ans_result: "付之一炬",
+    ans_analyze: "谜底别解为“给别人一把火炬”。",
+    difficulty: "3",
+    choose: "付之一炬牙掌及梳哈拨为腊"
+}, {
+    code: "MY000221",
+    puzzle: "两心上下总难平",
+    ans_scope: "打一成语",
+    ans_prompt: "***安",
+    ans_result: "忐忑不安",
+    ans_analyze: "两个“心”与“上下”组合，可成“忐忑”二字；“难平”暗示“不安”之意。",
+    difficulty: "1",
+    choose: "忐忑不安坐卧国泰民转危为"
+}, {
+    code: "MY000222",
+    puzzle: "路尽言未尽",
+    ans_scope: "打一成语",
+    ans_prompt: "说***",
+    ans_result: "说长道短",
+    ans_analyze: "“路尽言未尽”别解为“道比较短，但话比较多（长）”。",
+    difficulty: "1",
+    choose: "说长道短来话地谈天一不二"
+}, {
+    code: "MY000223",
+    puzzle: "地对空导弹",
+    ans_scope: "打一成语",
+    ans_prompt: "见***",
+    ans_result: "见机行事",
+    ans_analyze: "“机”别解为“飞机”。",
+    difficulty: "1",
+    choose: "见机行事义勇为微知著不救"
+}, {
+    code: "MY000224",
+    puzzle: "变思为田",
+    ans_scope: "打一成语",
+    ans_prompt: "心***",
+    ans_result: "心不在焉",
+    ans_analyze: "“思”字的“心”不在了，就为“田”。",
+    difficulty: "3",
+    choose: "心不在焉螺入士耐中六界花"
+}, {
+    code: "MY000225",
+    puzzle: "峰会大讲致富道",
+    ans_scope: "打一成语",
+    ans_prompt: "***论",
+    ans_result: "高谈阔论",
+    ans_analyze: "“峰”义扣“高”，“阔论”别解为“致富的言论”。",
+    difficulty: "3",
+    choose: "高谈阔论关衍治忌金扬满共"
+}, {
+    code: "MY000226",
+    puzzle: "向前看",
+    ans_scope: "打一成语",
+    ans_prompt: "**反*",
+    ans_result: "义无反顾",
+    ans_analyze: "谜底别解为“意思就是不回头看”，与谜面之意正面扣合。",
+    difficulty: "1",
+    choose: "义无反顾拨乱正举一三常态"
+}, {
+    code: "MY000227",
+    puzzle: "拆开信来吓一跳",
+    ans_scope: "打一成语",
+    ans_prompt: "*言**",
+    ans_result: "人言可畏",
+    ans_analyze: "“拆开信”别解为见“人言”。“吓一跳”提示“可畏”之意。",
+    difficulty: "1",
+    choose: "人言可畏快快语甜蜜一为定"
+}, {
+    code: "MY000228",
+    puzzle: "春节离家除夕回",
+    ans_scope: "打一成语",
+    ans_prompt: "***归",
+    ans_result: "满载而归",
+    ans_analyze: "谜底别解为“满一年（载）才回来”。",
+    difficulty: "1",
+    choose: "满载而归无家可宾至如众望"
+}, {
+    code: "MY000229",
+    puzzle: "处处增设电话线",
+    ans_scope: "打一成语",
+    ans_prompt: "**言*",
+    ans_result: "广开言路",
+    ans_analyze: "“言路”别解为“通电话的线路”。",
+    difficulty: "1",
+    choose: "广开言路溢于表名正顺计从"
+}, {
+    code: "MY000230",
+    puzzle: "双方都是门外汉",
+    ans_scope: "打一成语",
+    ans_prompt: "格***",
+    ans_result: "格格不入",
+    ans_analyze: "“双方”别解为“两个方格”，与“格格”相扣。",
+    difficulty: "1",
+    choose: "格格不入不吐杀勿论自成一"
+}, {
+    code: "MY000231",
+    puzzle: "洪水退后家不见",
+    ans_scope: "打一成语",
+    ans_prompt: "*离**",
+    ans_result: "流离失所",
+    ans_analyze: "“流”别解为“流水、洪水”，“所”指“住所”。",
+    difficulty: "1",
+    choose: "流离失所支破碎生死别虎如"
+}, {
+    code: "MY000232",
+    puzzle: "清明过后抽新条",
+    ans_scope: "打一成语",
+    ans_prompt: "***枝",
+    ans_result: "节外生枝",
+    ans_analyze: "“清明过后”别解为“节外”，“抽新条”别解为“生枝”。",
+    difficulty: "1",
+    choose: "节外生枝强干弱同气连胜梳"
+}, {
+    code: "MY000233",
+    puzzle: "杜鹃声里杜鹃红",
+    ans_scope: "打一成语",
+    ans_prompt: "**花*",
+    ans_result: "鸟语花香",
+    ans_analyze: "第一个杜鹃指“杜鹃鸟”，第二个杜鹃指“杜鹃花”。",
+    difficulty: "1",
+    choose: "鸟语花香百齐放柳绿红似视"
+}, {
+    code: "MY000234",
+    puzzle: "国庆中秋凯歌传",
+    ans_scope: "打一成语",
+    ans_prompt: "节***",
+    ans_result: "节节胜利",
+    ans_analyze: "“国庆中秋”别解为“节节”，“凯歌传”别解为“胜利”。",
+    difficulty: "1",
+    choose: "节节胜利外生枝衣缩食目不"
+}, {
+    code: "MY000235",
+    puzzle: "反复朗读记得牢",
+    ans_scope: "打一成语",
+    ans_prompt: "***忘",
+    ans_result: "念念不忘",
+    ans_analyze: "“念念”别解为“反复朗读”，“不忘”别解为“记得牢”。",
+    difficulty: "1",
+    choose: "念念不忘没齿不难过目不吞"
+}, {
+    code: "MY000236",
+    puzzle: "众猎户分扮大虫",
+    ans_scope: "打一成语",
+    ans_prompt: "***虎",
+    ans_result: "三人成虎",
+    ans_analyze: "“众”可拆解成“三人”；大虫，虎的别称。",
+    difficulty: "1",
+    choose: "三人成虎如狼似视眈眈狼吞"
+}, {
+    code: "MY000237",
+    puzzle: "忍者自找苦吃",
+    ans_scope: "打一成语",
+    ans_prompt: "*人**",
+    ans_result: "耐人寻味",
+    ans_analyze: "“耐人”别解为“能忍耐的人”。",
+    difficulty: "3",
+    choose: "耐人寻味助为乐引入胜梳橘"
+}, {
+    code: "MY000238",
+    puzzle: "高空不要抛东西",
+    ans_scope: "打一字",
+    ans_prompt: "*",
+    ans_result: "究",
+    ans_analyze: "“空”字的高处取“穴”；“不要抛东西”别解为“抛”字不要东西两个部分，余下“九”，合成一字。",
+    difficulty: "1",
+    choose: "究白墨家峰卧欠护拨意江利"
+} ], o = [ {
+    code: "121022310001",
+    items: [ "MY000008", "MY000009", "MY000191", "MY000088", "MY000136" ]
+}, {
+    code: "121022310002",
+    items: [ "MY000107", "MY000010", "MY000103", "MY000182", "MY000040" ]
+}, {
+    code: "121022310003",
+    items: [ "MY000171", "MY000201", "MY000107", "MY000100", "MY000138" ]
+}, {
+    code: "121022310004",
+    items: [ "MY000222", "MY000071", "MY000132", "MY000194", "MY000105" ]
+}, {
+    code: "121022310005",
+    items: [ "MY000059", "MY000053", "MY000120", "MY000149", "MY000102" ]
+}, {
+    code: "121022310006",
+    items: [ "MY000027", "MY000022", "MY000135", "MY000142", "MY000181" ]
+}, {
+    code: "121022310007",
+    items: [ "MY000124", "MY000084", "MY000028", "MY000182", "MY000228" ]
+}, {
+    code: "121022310008",
+    items: [ "MY000115", "MY000164", "MY000019", "MY000218", "MY000232" ]
+}, {
+    code: "121022310009",
+    items: [ "MY000123", "MY000032", "MY000216", "MY000147", "MY000033" ]
+}, {
+    code: "121022310010",
+    items: [ "MY000018", "MY000116", "MY000191", "MY000058", "MY000178" ]
+}, {
+    code: "121022310011",
+    items: [ "MY000089", "MY000106", "MY000210", "MY000179", "MY000097" ]
+}, {
+    code: "121022310012",
+    items: [ "MY000050", "MY000066", "MY000009", "MY000062", "MY000055" ]
+}, {
+    code: "121022310013",
+    items: [ "MY000230", "MY000208", "MY000217", "MY000020", "MY000025" ]
+}, {
+    code: "121022310014",
+    items: [ "MY000068", "MY000151", "MY000039", "MY000092", "MY000156" ]
+}, {
+    code: "121022310015",
+    items: [ "MY000238", "MY000046", "MY000088", "MY000101", "MY000125" ]
+}, {
+    code: "121022310016",
+    items: [ "MY000016", "MY000137", "MY000052", "MY000010", "MY000130" ]
+}, {
+    code: "121022310017",
+    items: [ "MY000134", "MY000057", "MY000012", "MY000219", "MY000188" ]
+}, {
+    code: "121022310018",
+    items: [ "MY000103", "MY000001", "MY000114", "MY000082", "MY000207" ]
+}, {
+    code: "121022310019",
+    items: [ "MY000049", "MY000104", "MY000176", "MY000095", "MY000146" ]
+}, {
+    code: "121022310020",
+    items: [ "MY000161", "MY000076", "MY000190", "MY000003", "MY000145" ]
+}, {
+    code: "121022310021",
+    items: [ "MY000040", "MY000206", "MY000214", "MY000074", "MY000113" ]
+}, {
+    code: "121022310022",
+    items: [ "MY000155", "MY000150", "MY000187", "MY000183", "MY000118" ]
+}, {
+    code: "121022310023",
+    items: [ "MY000041", "MY000141", "MY000200", "MY000215", "MY000051" ]
+}, {
+    code: "121022310024",
+    items: [ "MY000119", "MY000005", "MY000117", "MY000044", "MY000227" ]
+}, {
+    code: "121022310025",
+    items: [ "MY000035", "MY000221", "MY000067", "MY000069", "MY000063" ]
+}, {
+    code: "121022310026",
+    items: [ "MY000075", "MY000174", "MY000037", "MY000128", "MY000172" ]
+}, {
+    code: "121022310027",
+    items: [ "MY000229", "MY000060", "MY000079", "MY000195", "MY000203" ]
+}, {
+    code: "121022310028",
+    items: [ "MY000109", "MY000080", "MY000038", "MY000023", "MY000140" ]
+}, {
+    code: "121022310029",
+    items: [ "MY000158", "MY000090", "MY000162", "MY000127", "MY000031" ]
+}, {
+    code: "121022310030",
+    items: [ "MY000136", "MY000165", "MY000139", "MY000008", "MY000160" ]
+}, {
+    code: "121022310031",
+    items: [ "MY000072", "MY000205", "MY000204", "MY000048", "MY000186" ]
+}, {
+    code: "121022310032",
+    items: [ "MY000197", "MY000169", "MY000223", "MY000236", "MY000211" ]
+}, {
+    code: "121022310033",
+    items: [ "MY000073", "MY000024", "MY000064", "MY000014", "MY000152" ]
+}, {
+    code: "121022310034",
+    items: [ "MY000013", "MY000154", "MY000078", "MY000045", "MY000029" ]
+}, {
+    code: "121022310035",
+    items: [ "MY000086", "MY000143", "MY000017", "MY000065", "MY000047" ]
+}, {
+    code: "121022310036",
+    items: [ "MY000021", "MY000054", "MY000004", "MY000056", "MY000002" ]
+}, {
+    code: "121022310037",
+    items: [ "MY000159", "MY000111", "MY000212", "MY000177", "MY000098" ]
+}, {
+    code: "121022310038",
+    items: [ "MY000007", "MY000226", "MY000081", "MY000112", "MY000168" ]
+}, {
+    code: "121022310039",
+    items: [ "MY000199", "MY000184", "MY000193", "MY000231", "MY000042" ]
+}, {
+    code: "121022310040",
+    items: [ "MY000157", "MY000235", "MY000077", "MY000015", "MY000036" ]
+}, {
+    code: "121022310041",
+    items: [ "MY000030", "MY000133", "MY000070", "MY000153", "MY000026" ]
+}, {
+    code: "121022310042",
+    items: [ "MY000234", "MY000148", "MY000083", "MY000129", "MY000144" ]
+}, {
+    code: "121022310043",
+    items: [ "MY000192", "MY000011", "MY000085", "MY000167", "MY000233" ]
+}, {
+    code: "121022310044",
+    items: [ "MY000043", "MY000180", "MY000196", "MY000091", "MY000006" ]
+}, {
+    code: "1210223500045",
+    items: [ "MY000202", "MY000166", "MY000034", "MY000182", "MY000035" ]
+} ], n = [ {
+    code: "221022310001",
+    items: [ "MY000003", "MY000007", "MY000199", "MY000086", "MY000201" ]
+}, {
+    code: "221022310002",
+    items: [ "MY000108", "MY000132", "MY000228", "MY000212", "MY000140" ]
+}, {
+    code: "221022310003",
+    items: [ "MY000235", "MY000139", "MY000033", "MY000031", "MY000184" ]
+}, {
+    code: "221022310004",
+    items: [ "MY000061", "MY000018", "MY000075", "MY000131", "MY000222" ]
+}, {
+    code: "221022310005",
+    items: [ "MY000236", "MY000205", "MY000227", "MY000150", "MY000030" ]
+}, {
+    code: "221022310006",
+    items: [ "MY000072", "MY000180", "MY000025", "MY000197", "MY000200" ]
+}, {
+    code: "221022310007",
+    items: [ "MY000058", "MY000238", "MY000019", "MY000175", "MY000118" ]
+}, {
+    code: "221022310008",
+    items: [ "MY000045", "MY000063", "MY000232", "MY000127", "MY000225" ]
+}, {
+    code: "221022310009",
+    items: [ "MY000138", "MY000004", "MY000186", "MY000182", "MY000128" ]
+}, {
+    code: "221022310010",
+    items: [ "MY000074", "MY000171", "MY000199", "MY000106", "MY000020" ]
+}, {
+    code: "221022310011",
+    items: [ "MY000187", "MY000196", "MY000224", "MY000195", "MY000153" ]
+}, {
+    code: "221022310012",
+    items: [ "MY000166", "MY000203", "MY000064", "MY000172", "MY000223" ]
+}, {
+    code: "221022310013",
+    items: [ "MY000108", "MY000116", "MY000001", "MY000229", "MY000081" ]
+}, {
+    code: "221022310014",
+    items: [ "MY000143", "MY000211", "MY000157", "MY000043", "MY000185" ]
+}, {
+    code: "221022310015",
+    items: [ "MY000008", "MY000068", "MY000201", "MY000176", "MY000070" ]
+}, {
+    code: "221022310016",
+    items: [ "MY000079", "MY000178", "MY000181", "MY000041", "MY000105" ]
+}, {
+    code: "221022310017",
+    items: [ "MY000141", "MY000002", "MY000039", "MY000215", "MY000155" ]
+}, {
+    code: "221022310018",
+    items: [ "MY000237", "MY000053", "MY000213", "MY000140", "MY000125" ]
+}, {
+    code: "221022310019",
+    items: [ "MY000134", "MY000158", "MY000099", "MY000007", "MY000204" ]
+}, {
+    code: "221022310020",
+    items: [ "MY000104", "MY000085", "MY000094", "MY000210", "MY000177" ]
+}, {
+    code: "221022310021",
+    items: [ "MY000220", "MY000219", "MY000193", "MY000190", "MY000149" ]
+}, {
+    code: "221022310022",
+    items: [ "MY000093", "MY000132", "MY000209", "MY000206", "MY000212" ]
+}, {
+    code: "221022310023",
+    items: [ "MY000003", "MY000042", "MY000119", "MY000080", "MY000123" ]
+}, {
+    code: "221022310024",
+    items: [ "MY000207", "MY000152", "MY000183", "MY000221", "MY000047" ]
+}, {
+    code: "221022310025",
+    items: [ "MY000136", "MY000035", "MY000226", "MY000161", "MY000027" ]
+}, {
+    code: "221022310026",
+    items: [ "MY000234", "MY000057", "MY000066", "MY000188", "MY000086" ]
+}, {
+    code: "221022310027",
+    items: [ "MY000156", "MY000189", "MY000096", "MY000056", "MY000109" ]
+}, {
+    code: "221022310028",
+    items: [ "MY000077", "MY000050", "MY000048", "MY000216", "MY000034" ]
+}, {
+    code: "221022310029",
+    items: [ "MY000062", "MY000121", "MY000146", "MY000170", "MY000024" ]
+}, {
+    code: "221022310030",
+    items: [ "MY000159", "MY000133", "MY000069", "MY000147", "MY000124" ]
+}, {
+    code: "221022310031",
+    items: [ "MY000129", "MY000028", "MY000090", "MY000217", "MY000038" ]
+}, {
+    code: "221022310032",
+    items: [ "MY000087", "MY000163", "MY000107", "MY000191", "MY000092" ]
+}, {
+    code: "221022310033",
+    items: [ "MY000174", "MY000168", "MY000065", "MY000012", "MY000142" ]
+}, {
+    code: "221022310034",
+    items: [ "MY000198", "MY000044", "MY000110", "MY000113", "MY000111" ]
+}, {
+    code: "221022310035",
+    items: [ "MY000078", "MY000084", "MY000032", "MY000162", "MY000179" ]
+}, {
+    code: "221022310036",
+    items: [ "MY000169", "MY000218", "MY000112", "MY000017", "MY000154" ]
+}, {
+    code: "221022310037",
+    items: [ "MY000054", "MY000010", "MY000051", "MY000130", "MY000014" ]
+}, {
+    code: "221022310038",
+    items: [ "MY000208", "MY000114", "MY000076", "MY000009", "MY000126" ]
+}, {
+    code: "221022310039",
+    items: [ "MY000231", "MY000026", "MY000097", "MY000005", "MY000022" ]
+}, {
+    code: "221022310040",
+    items: [ "MY000160", "MY000055", "MY000144", "MY000015", "MY000230" ]
+}, {
+    code: "221022310041",
+    items: [ "MY000151", "MY000101", "MY000167", "MY000202", "MY000122" ]
+}, {
+    code: "221022310042",
+    items: [ "MY000173", "MY000120", "MY000135", "MY000194", "MY000083" ]
+}, {
+    code: "221022310043",
+    items: [ "MY000091", "MY000006", "MY000103", "MY000073", "MY000098" ]
+}, {
+    code: "221022310044",
+    items: [ "MY000011", "MY000228", "MY000115", "MY000067", "MY000052" ]
+}, {
+    code: "221022310045",
+    items: [ "MY000117", "MY000040", "MY000095", "MY000071", "MY000013" ]
+}, {
+    code: "221022310046",
+    items: [ "MY000100", "MY000046", "MY000145", "MY000089", "MY000036" ]
+}, {
+    code: "221022310047",
+    items: [ "MY000082", "MY000164", "MY000021", "MY000102", "MY000148" ]
+}, {
+    code: "221022310048",
+    items: [ "MY000016", "MY000037", "MY000029", "MY000059", "MY000049" ]
+}, {
+    code: "221022310049",
+    items: [ "MY000233", "MY000165", "MY000214", "MY000088", "MY000192" ]
+}, {
+    code: "2210223500050",
+    items: [ "MY000060", "MY000023", "MY000137", "MY000009", "MY000218" ]
+} ], c = function(s) {
+    return 1 === s ? n : o;
+}, _ = function(e) {
+    return {
+        mode: e,
+        score: 0,
+        numOfCorrect: 0,
+        numOfSkipping: 0,
+        startTime: s.formatTime(new Date()),
+        endTime: "",
+        currentIndex: 0,
+        items: []
+    };
+}, l = function(s, e) {
+    s.code = e.code, e.items.forEach(function(e) {
+        var o = a.find(function(s) {
+            return s.code === e;
+        });
+        if (o) {
+            var n = {
+                callHelp: !1,
+                user_duration: 0,
+                user_answer: "",
+                user_result: 0
+            };
+            n.code = o.code, n.puzzle = o.puzzle, n.ans_scope = o.ans_scope, n.ans_prompt = o.ans_prompt, 
+            n.ans_result = o.ans_result, n.ans_analyze = o.ans_analyze, n.difficulty = o.difficulty, 
+            n.choose = o.choose, s.items.push(n);
+        }
+    }), s.items.length > 0 && s.items.sort(function() {
+        return Math.random() - .5;
+    });
+};
+
+module.exports = {
+    extract: function(s) {
+        var e = c(s), a = _(s), o = e.length;
+        if (o >= 1) {
+            var n = e[this.getNowIndex(s, o)];
+            l(a, n);
+        }
+        return a;
+    },
+    setNextIndex: function(s) {
+        var a = this.getNowIndex(s);
+        (a += 1) >= c(s).length && (a = 0);
+        try {
+            result = 1 == s ? wx.setStorageSync(e.KEY_HARD_GROUP_CURRENT, a) : wx.setStorageSync(e.KEY_EASY_GROUP_CURRENT, a);
+        } catch (s) {
+            console.log(s);
+        }
+    },
+    getNowIndex: function(a, o) {
+        var n = 0;
+        try {
+            "" == (n = 1 == a ? wx.getStorageSync(e.KEY_HARD_GROUP_CURRENT) : wx.getStorageSync(e.KEY_EASY_GROUP_CURRENT)) && (n = 0), 
+            n >= o && (n = 0);
+        } catch (e) {
+            n = s.randomNum(0, o - 1), console.log(e);
+        }
+        return n;
+    },
+    select: function(s, e) {
+        var a = c(s).find(function(s) {
+            return s.code === e;
+        });
+        if (a) {
+            var o = _(s);
+            return l(o, a), o;
+        }
+        return this.extract(s);
+    }
+};

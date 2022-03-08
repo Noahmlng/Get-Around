@@ -1,0 +1,30 @@
+<!-- 鱼头 --><!-- 鱼头 --><!-- 鱼头 -->
+<view class="header">
+    <view class="text" style="position: relative; top: 45rpx; font-size: x-small; color: antiquewhite">谨以此纪念我们在这的时光 | S22届Intern</view>
+    <image src="../../images/img_slogan.png" style="width: 514rpx; height: 125rpx; display: block; box-sizing: border-box; position: relative; left: 119rpx; top: 134rpx"></image>
+</view>
+<view class="content">
+    <image mode class="content-bg" src="../../images/Ashley对于奇绩的初印象.jpg" bindtap="bind_easymode_startup"></image>
+    <!-- <view class="content-main">
+        <view class="riddle-choose">
+            <view class="riddle-mode">
+                <view bindtap="bind_easymode_startup" class="riddle-mode-item" hoverClass="hover">
+                    <image mode src="../../images/img_index05.png" style="position: absolute; left: 179rpx; top: 375rpx"></image>
+                    <view class="text" style="position: absolute; left: 122rpx; top: 375rpx; text-size-adjust: auto; width: 364rpx; height: 188rpx; display: block; box-sizing: border-box; font-size: larger">
+                        很高兴认识你！
+                    </view>
+                </view>
+                <view class="riddle-mode-item-separate"></view>
+                <view bindtap="bind_hardmode_startup" class="riddle-mode-item" hoverClass="hover">
+                    <image mode src="../../images/img_index05.png"></image>
+                    <view class="text">
+                        王者模式
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view> -->
+</view>
+<view class="footer">
+    <!-- <image mode class="footer-bottom" src="../../images/img_index04.png"></image> -->
+</view>
